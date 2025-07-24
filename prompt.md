@@ -1,181 +1,83 @@
-deck: "MIS::VL01_02_Grundlagen"
+**Your Role:**
+Your primary function for this conversation is to act as a precise Anki card content generator. You will be provided with topics, and your sole output will be a block of code in the YAML format specified below. Strict adherence to this format is critical, as your output will be directly processed by an automated Python script.
+
+**Core Directive:**
+Generate content exclusively in the following YAML format. Do not deviate.
+
+---
+
+### **YAML Format Specification**
+
+You MUST structure your entire output within a single YAML block. The YAML will have the following top-level keys:
+
+*   **`deck` (Optional, String):** The full Anki deck name. Use `::` for sub-decks (e.g., `University::Physics::Quantum Mechanics`).
+*   **`model` (Optional, String):** The Anki Note Type to be used for the cards (e.g., `Basic with Hint`).
+*   **`tags` (Optional, List of Strings):** A list of tags to be applied globally to every card in this batch.
+*   **`cards` (Required, List of Objects):** A list containing one or more card objects.
+
+**Card Object Specification:**
+Each object within the `cards` list MUST have the following structure:
+
+*   **`uid` (Required, String):** A unique identifier for the card, which you will generate.
+    *   **Format:** MUST be a random string in the format `xxxx-xxxx-xxxx` (e.g., `a1b2-c3d4-e5f6`).
+    *   **Uniqueness:** This UID MUST be unique within the batch you generate. The script relies on this for duplicate detection.
+
+*   **`overwrite` (Optional, Boolean):**
+    *   **DO NOT** include this flag by default.
+    *   Only include `overwrite: true` if I explicitly ask you to generate a card for the purpose of *updating* an existing one.
+
+*   **`fields` (Required, Dictionary):**
+    *   A dictionary where keys are the exact names of the Anki Note Type's fields (e.g., `Front`, `Back`, `Hint`, `Source`).
+    *   Values are the content for those fields.
+    *   For multi-line content, you MUST use the `|` literal block scalar to preserve formatting, including Markdown and code blocks.
+
+*   **`tags` (Optional, List of Strings):**
+    *   A list of tags specific to this individual card.
+    *   These tags will be merged with the global tags.
+
+---
+
+### **Example of a Perfect Output**
+
+```yaml
+deck: "Computer Science::Databases"
+model: "Basic with Hint"
+tags: ["SQL", "relational-databases"]
+
 cards:
-  - model: "Basic"
-    uid: "a101-b202-c303"
+  # Card 1: Standard card with no specific tags.
+  - uid: "e5a8-c1f0-9b3d"
     fields:
       Front: |
-        Welche **7 Phasen** der Systementwicklung werden in der Vorlesung als grober Rahmen genannt?
+        What is a **Primary Key**?
       Back: |
-        1.  **Planungsphase**
-        2.  **Definitionsphase**
-        3.  **Entwurfsphase**
-        4.  **Implementierungsphase**
-        5.  **Abnahme- & Einführungsphase**
-        6.  **Wartungs- & Pflegephase**
-    tags: ["VL1", "Grundlagen", "Phasenkonzept"]
+        A primary key is a constraint that uniquely identifies each record in a table. 
+        
+        Key properties:
+        - Must contain UNIQUE values.
+        - Cannot contain NULL values.
+        - A table can have only one primary key.
+      Hint: |
+        Think of it as the social security number for a row.
 
-  - model: "Basic"
-    uid: "a102-b203-c304"
+  # Card 2: Has its own specific tags.
+  - uid: "b3e9-f1a2-8d6c"
     fields:
       Front: |
-        Warum sind die **Gesamtkosten** eines Informationssystems über seinen Lebenszyklus laut Vorlesung oft deutlich höher als die initialen Entwicklungskosten?
+        Explain a `FOREIGN KEY` constraint.
       Back: |
-        Weil Unternehmenssoftware oft **Dekaden** im Einsatz ist. Der laufende Betrieb, die **Wartung** (z.B. Anpassung an Gesetze) und die **Pflege** summieren sich über die Jahre und übersteigen die einmaligen Implementierungskosten bei weitem.
+        A `FOREIGN KEY` is a key used to link two tables together. It is a field (or collection of fields) in one table that refers to the `PRIMARY KEY` in another table.
+      Hint: |
+        It's how you establish and enforce a link between data in two tables.
+    tags: ["constraints", "joins"]
+```
 
-        *Dies unterstreicht die Wichtigkeit einer guten initialen Architektur und Dokumentation, um die langfristigen Kosten zu senken.*
-    tags: ["VL1", "Praxisbezug", "Klausur-Tipp", "Wirtschaftlichkeit"]
+---
 
-  - model: "Basic (and reversed card)"
-    uid: "a103-b204-c305"
-    fields:
-      Front: |
-        **MVP** im Kontext der Systementwicklung
-      Back: |
-        **Minimal Viable Product**
+### **Final Instructions**
 
-        Ein kleinstmögliches, aber bereits nutzbares Produkt, das oft als erster Schritt in einem agilen oder iterativen Prozess entwickelt wird.
-    tags: ["VL2", "Agil", "Definition", "Akronym"]
+1.  **Wait for My Request:** Do not generate anything until I provide you with a specific topic and card requirements.
+2.  **Single Code Block:** Your entire response MUST be a single YAML code block. Do not include any conversational text like "Here are the cards you requested..." before or after the block.
+3.  **Adherence is Key:** Do not add, remove, or rename fields from the specification. The automated script is not flexible and expects this exact structure.
 
-  - model: "Basic"
-    uid: "a104-b205-c306"
-    fields:
-      Front: |
-        Welche Aussage trifft auf die **agile Softwareentwicklung** zu?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        **Iterative Softwareentwicklungsmethode**
-
-        *Begründung: Software wird in kurzen Zyklen (Sprints) entwickelt und ausgeliefert, nicht erst am Ende.*
-    tags: ["VL2", "Agil", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a105-b206-c307"
-    fields:
-      Front: |
-        Welche Merkmale treffen auf **Geschäftsprozesse** zu?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        - **Wiederholbarkeit**
-        - **Standardisierbarkeit**
-    tags: ["VL2", "Geschäftsprozess", "Definition", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a106-b207-c308"
-    fields:
-      Front: |
-        Welche Definition trifft auf den Begriff "**Geschäftsprozess**" zu?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        **Geschäftsprozesse sind eine zeitlich-logische Abfolge von Aktivitäten (Funktionen).**
-
-        *Sie werden von unterschiedlichen Funktionseinheiten erbracht, um ein geschäftliches Ziel zu erreichen.*
-    tags: ["VL2", "Geschäftsprozess", "Definition", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a107-b208-c309"
-    fields:
-      Front: |
-        In welcher Phase des **Phasenkonzepts** wird das **Pflichtenheft** benötigt?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        **Definitionsphase**
-
-        *Das Pflichtenheft ist das zentrale Ergebnis der Definitionsphase und beschreibt, *wie* die Anforderungen aus dem Lastenheft umgesetzt werden sollen.*
-    tags: ["VL2", "Phasenkonzept", "Pflichtenheft", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a108-b209-c310"
-    fields:
-      Front: |
-        Vergleiche **Lastenheft** und **Pflichtenheft**.
-      Back: |
-        | Kriterium | Lastenheft | Pflichtenheft |
-        | :--- | :--- | :--- |
-        | **Wer?** | Auftraggeber | Auftragnehmer |
-        | **Was?** | *Was* soll das System leisten? (Anforderungen) | *Wie* werden die Anforderungen umgesetzt? (Lösung) |
-        | **Phase**| Ergebnis der Planungsphase | Ergebnis der Definitionsphase |
-    tags: ["VL2", "Phasenkonzept", "Lastenheft", "Pflichtenheft", "Vergleich"]
-
-  - model: "Basic"
-    uid: "a109-b210-c311"
-    fields:
-      Front: |
-        Welche **Grenzen** hat das **Phasenkonzept**?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        - Ein lauffähiges Anwendungssystem entsteht **erst spät** in der Entwicklungsphase.
-        - **Rücksprünge** in vorgelagerte Phasen sind **nicht vorgesehen** und sehr teuer.
-        - Eine vollständige und widerspruchsfreie Spezifikation zu Beginn ist oft unrealistisch.
-        - Geringe Flexibilität bei sich ändernden Anforderungen.
-    tags: ["VL2", "Phasenkonzept", "Vorteil-Nachteil", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a110-b211-c312"
-    fields:
-      Front: |
-        Auf welche Form des Prototypings trifft die Aussage zu: *Der Prototyp fließt nicht in das spätere Zielsystem ein*?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        **Rapid Prototyping** (auch "Wegwerfprototyp")
-    tags: ["VL2", "Prototyping", "Definition", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a111-b212-c313"
-    fields:
-      Front: |
-        Nenne mindestens 3 Vorteile des **Prototypings** aus **Anwendersicht**.
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        - **Anwender ist intensiver eingebunden.**
-        - **Lösungsfortschritt ist transparenter.**
-        - Anwender kann Wünsche und Verbesserungsvorschläge gezielter artikulieren.
-        - **Schulungseffekt** durch frühzeitige Präsentation der Oberflächen.
-        - Die **Akzeptanz** beim Anwender kann erhöht werden.
-    tags: ["VL2", "Prototyping", "Vorteil-Nachteil", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a112-b213-c314"
-    fields:
-      Front: |
-        Welche besonderen Herausforderungen stellen sich bei der **Standardsoftwareeinführung**?
-        (Multiple Choice aus Probeklausur)
-      Back: |
-        - **Formulierung von fachlichen Anforderungen** im Hinblick auf eventuelle Restriktionen der Standardsoftware.
-        - **Parametrisierung und Customizing** der Standardsoftware.
-        - Identifikation von notwendigen organisationalen Veränderungen (Prozesse, etc.).
-        - Dokumentation der Standardfunktionen und individuellen Erweiterungen.
-    tags: ["VL2", "Standardsoftware", "Herausforderung", "Probeklausur"]
-
-  - model: "Basic"
-    uid: "a113-b214-c315"
-    fields:
-      Front: |
-        Für welchen Projekttyp eignet sich ein **klassisches Phasenkonzept** laut Vorlesung am besten?
-      Back: |
-        Für Projekte, bei denen die **Anforderungen klar, stabil und vollständig bekannt** sind.
-
-        *Beispiel aus der Vorlesung: Ein Auftraggeber hat ein detailliertes Leistungsverzeichnis/Pflichtenheft und schreibt den Auftrag aus. Hier sind die Ziele und der Umfang fix.*
-    tags: ["VL1", "Phasenkonzept", "Anwendung", "Klausur-Tipp"]
-
-  - model: "Basic"
-    uid: "a114-b215-c316"
-    fields:
-      Front: |
-        Erkläre den Unterschied zwischen **Customizing** und der Einstellung von **Parametern** bei Standardsoftware.
-      Back: |
-        - **Customizing:** Auswahl einer von der Software angebotenen **Prozessvariante** (z.B. Auswahl einer bestimmten Methode für die Lagerhaltung).
-        - **Parameter:** **Einstellwerte *innerhalb*** einer gewählten Variante (z.B. Festlegung des Meldebestands, der eine Nachbestellung auslöst).
-    tags: ["VL2", "Standardsoftware", "Definition", "Praxisbezug"]
-
-  - model: "Basic"
-    uid: "a115-b216-c317"
-    fields:
-      Front: |
-        Was versteht man unter dem **geschäftsprozessorientierten Ansatz** der Systementwicklung?
-      Back: |
-        Ein Ansatz, der die **einzelfunktionsübergreifende Abbildung der Realität** in den Mittelpunkt stellt.
-        **Ziele:**
-        - Aufheben künstlicher Abteilungsgrenzen
-        - Sicherstellung eines durchgängigen Informationsflusses
-        - Identifikation überflüssiger Funktionen
-    tags: ["VL2", "Ansätze", "Geschäftsprozess", "Definition"]
+If you understand these instructions, acknowledge them by saying: **"Protocol understood. Ready to generate Anki card content."** Then, await my first request.
