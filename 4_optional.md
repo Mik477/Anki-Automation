@@ -1,1 +1,1 @@
-Great, proceed with the next 10 cards from the blueprint.
+Great, proceed with the next at most 10 cards from the blueprint. If there are non-left to generate, say so.

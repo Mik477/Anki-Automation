@@ -1,0 +1,184 @@
+deck: "Management der Informationssysteme::VL03_Planung_Definition"
+cards:
+  - model: "Basic"
+    uid: "kef-001a-1b2c"
+    fields:
+      Front: |
+        Was ist die Analyse **Kritischer Erfolgsfaktoren (KEF)** und welche Vor- und Nachteile hat sie bei der AS-Planung?
+      Back: |
+        **Definition:**
+        KEF sind jene wenigen Bereiche/Faktoren, deren positives Ergebnis den **Erfolg des Unternehmens** sicherstellt. Die Analyse spiegelt also wichtige **Zielkriterien** wider.
+
+        **Beurteilung:**
+        *   **Vorteil:** Geeignet zum Identifizieren empfehlenswerter Projekte.
+        *   **Nachteile:**
+            *   Der Inhalt des Anwendungssystems wird nicht konkretisiert.
+            *   KEF können sich während der langen Entwicklungszeit eines AS ändern.
+    tags: ["VL_Planung_Definition", "AS-Planung", "KEF", "Slide_24"]
+
+  - model: "Basic"
+    uid: "kef-002b-2c3d"
+    fields:
+      Front: |
+        Aus welchen 6 übergeordneten Kategorien können sich **Kritische Erfolgsfaktoren (KEF)** ableiten?
+      Back: |
+        1.  **Branche** (z.B. Image, Kosten, Innovation)
+        2.  **Strategie und Positionierung** (z.B. Kunden, Konkurrenz, Barrieren)
+        3.  **interne Unternehmenssituation** (z.B. Personal, Technologie, Organisation)
+        4.  **Umwelteinflüsse** (z.B. sozial, politisch, rechtlich)
+        5.  **subjektive Vorstellungen** (z.B. Unternehmenskultur, persönliche Wertvorstellungen)
+        6.  **temporäre Faktoren** (z.B. Projekte, Gesetzesänderungen)
+
+        *(Visuelle Eselsbrücke siehe Diagramm auf Folie 25)*
+    tags: ["VL_Planung_Definition", "AS-Planung", "KEF", "Slide_25"]
+
+  - model: "Basic"
+    uid: "port-003c-3d4e"
+    fields:
+      Front: |
+        Was ist die **Portfolio-Analyse** im Rahmen der AS-Planung und welche Vor- und Nachteile hat sie?
+      Back: |
+        **Definition:**
+        Dient der Einordnung von potenziellen Projekten in ein oder mehrere Portfolios, um deren **Bedeutung** zu ermitteln und zu bewerten.
+
+        **Beurteilung:**
+        *   **Vorteil:** Geeignet zur Bewertung bereits identifizierter Projekte unter verschiedenen Gesichtspunkten.
+        *   **Nachteil:** Das Zusammenfassen der Ergebnisse zu einer einzigen gewichteten Aussage ist ggf. problematisch.
+    tags: ["VL_Planung_Definition", "AS-Planung", "Portfolio-Analyse", "Slide_26"]
+
+  - model: "Basic"
+    uid: "port-004d-4e5f"
+    fields:
+      Front: |
+        Erläutern Sie das Portfolio zur Beurteilung von Projekten nach ihrem **Beitrag zu Unternehmenszielen** (Achsen & Quadranten).
+      Back: |
+        Dieses Portfolio bewertet den strategischen Beitrag eines Projekts.
+        *   **X-Achse:** Kostensenkung (niedrig bis hoch)
+        *   **Y-Achse:** Beitrag eines IV-Systems zur Differenzierung (niedrig bis hoch)
+
+        **Quadranten:**
+        *   **links unten:** *keine Investition*
+        *   **links oben/rechts unten:** *selektiv investieren*
+        *   **rechts oben:** *ideale Projekte*
+
+        *(Siehe Diagramm auf Folie 27)*
+    tags: ["VL_Planung_Definition", "Portfolio-Analyse", "Unternehmensziele", "Slide_27"]
+
+  - model: "Basic"
+    uid: "port-005e-5f6g"
+    fields:
+      Front: |
+        Erläutern Sie das Portfolio zur Einschätzung der **technischen Realisierung** von Projekten (Achsen & Quadranten).
+      Back: |
+        Dieses Portfolio bewertet das technische Risiko eines Projekts.
+        *   **X-Achse:** notwendiger technischer Integrationsgrad (niedrig bis hoch)
+        *   **Y-Achse:** Existierendes IV-Know-how (niedrig bis hoch)
+
+        **Quadranten:**
+        *   **links oben:** *risikoarme Projekte*
+        *   **rechts unten:** *sehr risikoreiche Projekte*
+        *   **rechts oben / links unten:** *teilweise risikobehaftete Projekte*
+
+        *(Siehe Diagramm auf Folie 28)*
+    tags: ["VL_Planung_Definition", "Portfolio-Analyse", "Technische-Realisierung", "Slide_28"]
+
+  - model: "Basic"
+    uid: "tco-006f-6g7h"
+    fields:
+      Front: |
+        Nennen Sie die 6 Hauptkomponenten der Kosten bei einer **TCO (Total Cost of Ownership)**-Betrachtung.
+      Back: |
+        1.  **Beschaffungskosten** (Auswahl, Einkauf, Erstellung, Abschreibungen)
+        2.  **Bereitstellungskosten** (Installation, Schulung)
+        3.  **Modernisierungskosten** (Releasewechsel, Erweiterungen)
+        4.  **Betriebskosten** (Service, Störungsbeseitigungen)
+        5.  **Nutzungskosten** (Konfiguration, Training, gegenseitige Nutzerhilfe)
+        6.  **Stilllegungskosten** (Hardware-Entsorgung, Löschen & Archivieren von Daten)
+    tags: ["VL_Planung_Definition", "Wirtschaftlichkeit", "TCO", "Slide_31"]
+
+  - model: "Basic"
+    uid: "nutzen-007g-7h8i"
+    fields:
+      Front: |
+        Welche 3 **Nutzenkategorien** gibt es bei der Nutzenschätzung und was sind die zentralen **Schwierigkeiten** dabei?
+      Back: |
+        **Nutzenkategorien:**
+        1.  **direkt monetär quantifizierbar** (z.B. Personaleinsparungen)
+        2.  **nicht direkt monetär quantifizierbar** (z.B. Erhöhung der Pünktlichkeit)
+        3.  **qualitative oder strategische Effekte** (z.B. Erhöhung der Produktvarianten)
+
+        **Schwierigkeiten bei der Abschätzung:**
+        *   Umrechnung nicht-monetärer Effekte in Geldeinheiten.
+        *   Bewertung der Wahrscheinlichkeit des Eintritts von Nutzeneffekten.
+        *   Identifikation von Nutzeninterdependenzen.
+    tags: ["VL_Planung_Definition", "Wirtschaftlichkeit", "Nutzenschätzung", "Slide_32"]
+
+  - model: "Basic"
+    uid: "last-pflicht-008h-8i9j"
+    fields:
+      Front: |
+        Vergleichen Sie **Lastenheft** und **Pflichtenheft** hinsichtlich Ersteller, Inhalt/Zweck und Detaillierungsgrad.
+      Back: |
+        | Merkmal         | **Lastenheft**                                   | **Pflichtenheft**                                    |
+        | :-------------- | :----------------------------------------------- | :--------------------------------------------------- |
+        | **Ersteller**   | Auftrag**g**eber                                 | Auftrag**n**ehmer                                    |
+        | **Inhalt**      | Das **Was**: Gesamtheit der Anforderungen        | Das **Wie**: Realisierungsvorschläge                 |
+        | **Zweck**       | Grundlage für Angebotserstellung                 | Detaillierte Lösungsbeschreibung, rechtliche Grundlage |
+        | **Detaillierung** | **Grobe** Spezifikation                          | **Detaillierte**, vollständige Spezifikation          |
+    tags: ["VL_Planung_Definition", "Lastenheft", "Pflichtenheft", "Slide_36", "Slide_40"]
+
+  - model: "Basic (and reversed card)"
+    uid: "epk-not-009i-9j0k"
+    fields:
+      Front: |
+        Die Grundelemente der **EPK-Notation**
+        *(Nennen Sie die Bezeichnungen für die Symbole)*
+        
+      Back: |
+        *   **Rechteck (abgerundet):** Vorgang bzw. Funktion
+        *   **Sechseck:** Ereignis
+        *   **Rechteck (mit Rand):** Organisationseinheit
+        *   **Dokumentensymbol:** Informationsobjekt
+        *   **Kreis mit ∧:** AND-Operator
+        *   **Kreis mit ∨:** OR-Operator
+        *   **Kreis mit XOR:** XOR-Operator (exklusives Oder)
+    tags: ["VL_Planung_Definition", "EPK", "Notation", "Modellierung", "Slide_53"]
+
+  - model: "Basic"
+    uid: "epk-rules-010j-0k1l"
+    fields:
+      Front: |
+        Nennen Sie 4 zentrale **Modellierungsregeln** für Ereignisgesteuerte Prozessketten (EPK).
+      Back: |
+        1.  Ein Prozess beginnt und endet immer mit einem oder mehreren **Ereignissen**.
+        2.  **Funktionen** und **Ereignisse** müssen sich immer abwechseln.
+        3.  Verzweigungen (Operatoren) können an eine Funktion oder ein Ereignis anschließen. *Aber: XOR- und OR-Operatoren **müssen** an eine **Funktion** anschließen.*
+        4.  Eine Zusammenführung muss den **gleichen Verknüpfungsoperator** haben wie die davorliegende Verzweigung.
+    tags: ["VL_Planung_Definition", "EPK", "Modellierungsregeln", "Slide_56", "Slide_59"]
+
+  - model: "Basic"
+    uid: "epk-qual-011k-1l2m"
+    fields:
+      Front: |
+        Anhand welcher 4 **Qualitätsmerkmale** können Geschäftsprozesse (z.B. in einer EPK) bewertet werden?
+      Back: |
+        1.  **Wenig organisatorische Brüche:** Häufiger Wechsel der zuständigen Organisationseinheit deutet auf hohe Arbeitsteilung hin. Ziel ist das Zusammenfassen von Funktionen in einer Einheit.
+        2.  **Wenig informationstechnische Brüche:** Identifikation von Medienbrüchen durch Berücksichtigung der Informationsträger (z.B. Wechsel von digital zu Papier).
+        3.  **Kurze Durchlaufzeit:** Prüfung, ob sequentielle Prozesse parallelisiert werden können, um die Gesamtzeit zu verkürzen.
+        4.  **Vermeiden überflüssiger Funktionen:** Identifikation von Funktionen, deren Ergebnisse (Output) im betrachteten Prozess nicht weiter benötigt werden.
+    tags: ["VL_Planung_Definition", "EPK", "Qualitätsmerkmale", "Prozessoptimierung", "Slide_62"]
+
+  - model: "Basic (and reversed card)"
+    uid: "uml-ad-not-012l-2m3n"
+    fields:
+      Front: |
+        Die Grundelemente der **UML-Aktivitätsdiagramm-Notation**
+        *(Nennen Sie die Bezeichnungen für die Symbole)*
+        
+      Back: |
+        *   **Ausgefüllter Kreis:** Startknoten
+        *   **Kreis im Kreis:** Endknoten
+        *   **Rechteck (abgerundet):** Aktivität
+        *   **Raute (Diamond):** Entscheidung / Zusammenführung (logisches ODER)
+        *   **Dicker Balken:** Gabelung / Synchronisation (logisches UND)
+    tags: ["VL_Planung_Definition", "UML", "Aktivitätsdiagramm", "Notation", "Modellierung", "Slide_71-72"]

@@ -1,0 +1,251 @@
+deck: "Management der Informationssysteme::VL02_Grundlagen_Systementwicklung"
+cards:
+  - model: "Basic"
+    uid: "1a2b-3c4d-5e6f"
+    fields:
+      Front: |
+        Nennen Sie die zentralen **allgemeinen Herausforderungen** der AS-Entwicklung sowie die **Besonderheiten** bei der Einführung von Standardsoftware.
+      Back: |
+        **Allgemeine Herausforderungen:**
+        *   Ausrichtung an langfristiger Unternehmensstrategie
+        *   Planung/Management umfangreicher Projekte
+        *   Unvollständige/unverständliche Anforderungen (Lastenheft)
+        *   Aufkommen neuer Anforderungen während Entwicklung/Betrieb
+        *   Schwierige Kommunikation zwischen Fach- & DV-Personal
+        *   Lange Dauer des Entwicklungsprozesses
+        *   Gewährleistung der Wiederverwendung
+        *   Berücksichtigung von Integrationsbeziehungen & Normierungskriterien
+
+        **Besonderheiten bei Standardsoftware:**
+        *   Formulierung der Anforderungen bzgl. Software-Restriktionen
+        *   Parametrisierung & Customizing
+        *   Identifikation von organisationalen Veränderungen (Prozesse, Aufbauorganisation)
+        *   Dokumentation von Standardfunktionen und Erweiterungen (Pflichtenheft)
+    tags: ["VL02", "Herausforderungen", "Standardsoftware", "AS-Entwicklung", "Slide_10-12"]
+
+  - model: "Basic"
+    uid: "7g8h-9i0j-1k2l"
+    fields:
+      Front: |
+        Nennen Sie die 6 Phasen des **Phasenkonzepts** in korrekter Reihenfolge und ihr jeweiliges zentrales Ergebnis/Artefakt.
+      Back: |
+        1.  **Planungsphase** → Potenzielle IT-Projekte / *Lastenheft (grob)*
+        2.  **Definitionsphase** → *Pflichtenheft* (Soll-Konzept)
+        3.  **Entwurfsphase** → Fach-/DV-Konzept
+        4.  **Implementierungsphase** → Programmcode
+        5.  **Abnahme-/Einführungsphase** → Getestete Anwendung
+        6.  **Wartungsphase** → Modifizierte Anwendung
+    tags: ["VL02", "Phasenkonzept", "Wasserfallmodell", "Slide_14-16"]
+
+  - model: "Basic"
+    uid: "3m4n-5o6p-7q8r"
+    fields:
+      Front: |
+        Welche **Zielsetzungen** werden in der **Entwurfsphase** des Phasenkonzepts verfolgt und welche Teilbereiche umfasst der **Fachentwurf**?
+      Back: |
+        **Zielsetzung:** Die Umwandlung der fachlichen Anforderungen (*"Was"*) aus dem Pflichtenheft in ein detailliertes technisches Konzept (*"Wie"*), das als Bauplan für die Implementierung dient.
+
+        **Teilbereiche des Fachentwurfs:**
+        *   Geschäftsprozessmodellierung
+        *   Funktionsmodellierung
+        *   Gestaltung der Benutzungsoberfläche (GUI)
+        *   Datenmodellierung
+        *   Objektmodellierung
+    tags: ["VL02", "Phasenkonzept", "Entwurfsphase", "Fachentwurf", "Slide_15", "Probeklausur"]
+
+  - model: "Basic"
+    uid: "9s0t-1u2v-3w4x"
+    fields:
+      Front: |
+        Nennen Sie die wesentlichen **Vorteile und Grenzen** des Phasenkonzepts.
+      Back: |
+        **Vorteile:**
+        *   Gut strukturiertes, ingenieurmäßiges Vorgehen
+        *   Explizite Zwischenergebnisse (Meilensteine)
+
+        **Grenzen:**
+        *   Ein lauffähiges Anwendungssystem entsteht erst in einer späten Entwicklungsphase.
+        *   Rücksprünge in vorgelagerte Phasen sind nicht vorgesehen (rigid).
+        *   Vollständige/widerspruchsfreie Spezifikation zu Beginn oft nicht möglich.
+        *   Einbindung der Fachanwender erfolgt erst spät.
+    tags: ["VL02", "Phasenkonzept", "Vorteile-Nachteile", "Slide_18"]
+
+  - model: "Basic"
+    uid: "5y6z-7a8b-9c0d"
+    fields:
+      Front: |
+        Vergleichen Sie **evolutionäres Prototyping** und **Rapid Prototyping**.
+      Back: |
+        *   **Evolutionäres Prototyping:** Der erste Prototyp dient als **"Grundstein"** für das spätere Zielsystem. Er "wächst" durch permanente Überprüfung und Ergänzung von Funktionen.
+
+        *   **Rapid Prototyping:** Der Prototyp dient als **vorläufige Lösung** zur Klärung von Anforderungen und fließt **nicht** in das spätere Zielsystem ein. Er wird danach "weggeworfen" (*Wegwerfprototyp*).
+    tags: ["VL02", "Prototyping", "Evolutionäres-Prototyping", "Rapid-Prototyping", "Slide_21"]
+
+  - model: "Basic"
+    uid: "1e2f-3g4h-5i6j"
+    fields:
+      Front: |
+        Welche Vorteile bietet **Prototyping** für die **Anwender-** und die **Entwicklerseite**?
+      Back: |
+        **Vorteile Anwenderseite:**
+        *   Intensive Einbindung in den Entwicklungsprozess
+        *   Transparenter Lösungsfortschritt
+        *   Gezieltere Artikulation von Wünschen und Vorschlägen
+        *   Frühzeitiger Schulungseffekt durch Präsentation von Oberflächen
+
+        **Vorteile Entwicklerseite:**
+        *   Intensivere Nutzung des Know-hows der Fachabteilung
+        *   Einfachere Berücksichtigung von Benutzerwünschen
+        *   Senkung der Fehlerrate und des späteren Änderungsaufwands
+        *   Erhöhte Akzeptanz beim Anwender
+    tags: ["VL02", "Prototyping", "Vorteile-Nachteile", "Slide_23"]
+
+  - model: "Basic"
+    uid: "7k8l-9m0n-1o2p"
+    fields:
+      Front: |
+        Nennen Sie die zentralen **Grenzen und Nachteile** des Prototyping-Ansatzes.
+      Back: |
+        *   Mehrmalige Überarbeitungen können zu **suboptimalen Strukturen** oder Abläufen führen.
+        *   Projektbegleitende **Entwicklungsdokumentation** ist bei vielen Zyklen schwer zu erstellen.
+        *   Wichtige Informationen können durch Verzicht auf saubere Analyse **vergessen werden**.
+        *   Enge Zusammenarbeit erfordert **viel Zeit** für Kommunikation.
+        *   Berücksichtigung aller Wünsche erschwert Einhaltung von **Unternehmensstandards** (z.B. GUI-Gestaltung).
+    tags: ["VL02", "Prototyping", "Vorteile-Nachteile", "Slide_24"]
+
+  - model: "Basic"
+    uid: "3q4r-5s6t-7u8v"
+    fields:
+      Front: |
+        Nennen Sie die 4 Grundprinzipien der **agilen Softwareentwicklung** (Agiles Manifest).
+      Back: |
+        1.  **Individuen und Interaktionen** sind wichtiger als Prozesse und Werkzeuge.
+        2.  **Funktionierende Software** ist wichtiger als eine umfangreiche Dokumentation.
+        3.  **Kooperation mit Kunden** ist wichtiger als Vertragsverhandlungen.
+        4.  **Reaktionen auf Änderungen** sind wichtiger als die Verfolgung eines Plans.
+    tags: ["VL02", "Agile", "SCRUM", "Agiles-Manifest", "Slide_28"]
+
+  - model: "Basic"
+    uid: "9w0x-1y2z-3a4b"
+    fields:
+      Front: |
+        Skizzieren Sie den **SCRUM-Prozess** und die **3 zentralen Rollen**.
+      Back: |
+        **SCRUM-Prozess (vereinfacht):**
+        1.  **Product Backlog:** Liste aller Anforderungen.
+        2.  **Sprint Planning:** Auswahl der Aufgaben für den nächsten Sprint.
+        3.  **Sprint Backlog:** Aufgabenliste für den aktuellen Sprint.
+        4.  **Sprint (14-30 Tage):** Umsetzungsphase mit täglichem *Daily Stand-up*.
+        5.  **Review/Retrospektive:** Am Ende des Sprints wird das Ergebnis geprüft und der Prozess reflektiert.
+
+        **Zentrale Rollen:**
+        *   **Product Owner:** Verantwortlich für das Product Backlog und dessen Priorisierung (Bindeglied zum Kunden).
+        *   **Scrum Master:** Verantwortlich für die Einhaltung des agilen Prozesses und die Beseitigung von Hindernissen.
+        *   **Entwicklerteam:** Selbstorganisiertes Team, das die Aufgaben aus dem Sprint Backlog umsetzt.
+    tags: ["VL02", "Agile", "SCRUM", "Prozess", "Rollen", "Slide_28-29"]
+
+  - model: "Basic"
+    uid: "5c6d-7e8f-9g0h"
+    fields:
+      Front: |
+        Definieren Sie '**Geschäftsprozess**', nennen Sie seine **Merkmale** und die **Hauptzielsetzung** des geschäftsprozessorientierten Ansatzes.
+      Back: |
+        **Definition:** Eine **zeitlich-logische Abfolge** von Aktivitäten (Funktionen), die von unterschiedlichen Funktionseinheiten im Unternehmen erbracht werden.
+
+        **Merkmale (prüfungsrelevant):**
+        *   Wiederholbarkeit
+        *   Standardisierbarkeit
+
+        **Ziele des Ansatzes:**
+        *   Einzelfunktionsübergreifende Abbildung der Realität
+        *   Aufheben künstlicher Abteilungsgrenzen
+        *   Durchgängiger Informationsfluss
+    tags: ["VL02", "Geschäftsprozess", "Definition", "Merkmale", "Ziele", "Slide_32-34", "Probeklausur"]
+
+  - model: "Basic"
+    uid: "1i2j-3k4l-5m6n"
+    fields:
+      Front: |
+        Welche **Vorteile und Grenzen** hat der geschäftsprozessorientierte Ansatz?
+      Back: |
+        **Vorteile:**
+        *   Zusammengehörige Funktionen werden zusammengehörig modelliert.
+        *   Schwachstellen in Abläufen können einfach aufgedeckt werden.
+        *   Ansatzpunkte für AS-Unterstützung werden einfach identifiziert.
+
+        **Grenzen:**
+        *   Planungs- und Kontrolltätigkeiten lassen sich nur unzureichend darstellen.
+        *   Stark sequenzialisierte Prozesse führen oft zu Vereinfachungen (Vernetzung wird nicht beachtet).
+        *   Methode alleine ist nicht für AS-Entwicklung nutzbar.
+    tags: ["VL02", "Geschäftsprozess", "Vorteile-Nachteile", "Slide_37"]
+
+  - model: "Basic"
+    uid: "7o8p-9q0r-1s2t"
+    fields:
+      Front: |
+        Erläutern Sie das **Paradigma** des **funktions- und datenorientierten Ansatzes** und nennen Sie dessen zentrale **Grenzen**.
+      Back: |
+        **Paradigma:** Strikte **Trennung von Funktionen und Daten**.
+        1.  Zuerst werden die betrieblichen Funktionen modelliert (*Funktionsorientierung*) ODER die betrieblichen Daten strukturiert (*Datenorientierung*).
+        2.  Im zweiten Schritt wird der Zugriff der Funktionen auf die Daten modelliert.
+
+        **Grenzen:**
+        *   Partielle Auslegung der Methoden (entweder Daten- oder Funktionssicht dominiert).
+        *   Übergang vom Fachkonzept zum DV-Konzept ist problematisch.
+        *   Wartungs- und Wiederverwendbarkeit ist eingeschränkt.
+    tags: ["VL02", "Funktionsorientierung", "Datenorientierung", "Paradigma", "Grenzen", "Slide_39-41"]
+
+  - model: "Basic"
+    uid: "3u4v-5w6x-7y8z"
+    fields:
+      Front: |
+        Definieren Sie '**Objekt**' und '**Kapselung**' und nennen Sie die Vorteile und Grenzen des **objektorientierten Ansatzes**.
+      Back: |
+        **Konzepte:**
+        *   **Objekt:** Eine Einheit, die sowohl **Daten** (Attribute) als auch **Funktionalität** (Methoden) zu einem Sachverhalt der Realität (z.B. "Auftrag") umfasst.
+        *   **Kapselung:** Das Zusammenfassen von Daten und den dazugehörigen Methoden zu einem Objekt. Die Daten sind von außen nicht direkt manipulierbar, sondern nur über die Methoden des Objekts.
+
+        **Vorteile:**
+        *   Keine Trennung zwischen Daten und Funktionen.
+        *   Nur ein Modell für Fach- und DV-Konzept nötig.
+
+        **Grenzen:**
+        *   Altsysteme sind meist nicht objektorientiert.
+        *   Schwieriger zu verstehen für konventionell ausgebildete Entwickler.
+    tags: ["VL02", "Objektorientierung", "Kapselung", "Objekt", "Vorteile-Nachteile", "Slide_43-45"]
+
+  - model: "Basic"
+    uid: "9a0b-1c2d-3e4f"
+    fields:
+      Front: |
+        Was sind **Werkzeuge (CASE-Tools)** im Kontext der Systementwicklung, und welche **Möglichkeiten und Grenzen** haben sie?
+      Back: |
+        **Definition:** Instrumente, welche den Einsatz einer Methode unterstützen (z.B. ein Modellierungstool).
+
+        **Möglichkeiten & Vorteile:**
+        *   Beschleunigung des Entwicklungsprozesses
+        *   Überprüfung der **formalen** Korrektheit eines Modells
+        *   Unterstützung bei der Dokumentationserstellung
+
+        **Grenzen:**
+        *   Keine Automatisierung des gesamten Entwicklungsprozesses
+        *   Keine Überprüfung der **inhaltlichen** Korrektheit
+        *   Eventuell hoher Lernaufwand
+    tags: ["VL02", "Werkzeuge", "CASE-Tools", "Möglichkeiten-Grenzen", "Slide_47"]
+
+  - model: "Basic"
+    uid: "5g6h-7i8j-9k0l"
+    fields:
+      Front: |
+        Unterscheiden Sie **Upper CASE-** und **Lower CASE-Tools**.
+      Back: |
+        **Upper CASE-Tools:**
+        *   **Einsatz:** In frühen Phasen der Entwicklung (Planung, Analyse).
+        *   **Zweck:** Unterstützung von Planungsaufgaben und fachlicher Konzeption.
+        *   **Beispiel:** Matrixgeneratoren zur Analyse von Wirkungsbeziehungen.
+
+        **Lower CASE-Tools:**
+        *   **Einsatz:** In späten Phasen ("Code-naher" Einsatz).
+        *   **Zweck:** Unterstützung von DV-technischem Entwurf und Implementierung.
+        *   **Beispiel:** Compiler, Debugger, Programmeditoren, Codegeneratoren.
+    tags: ["VL02", "CASE-Tools", "Upper-CASE", "Lower-CASE", "Vergleich", "Slide_48"]
