@@ -1,0 +1,1 @@
+Great, proceed with the next 10 cards from the blueprint.
