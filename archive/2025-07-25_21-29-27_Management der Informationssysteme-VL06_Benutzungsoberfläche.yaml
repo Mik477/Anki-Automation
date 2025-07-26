@@ -1,0 +1,122 @@
+deck: "Management der Informationssysteme::VL06_Benutzungsoberfläche"
+cards:
+  - model: "Basic"
+    uid: "ui-class-001a"
+    fields:
+      Front: |
+        Unterscheiden Sie die 4 **Dialogformen** von den 5 **Dialogmodalitäten** zur Klassifizierung von Softwareoberflächen.
+      Back: |
+        **Dialogformen (Wie wird der Dialog geführt?):**
+        *   **Directed Dialog (angeleitet):** Computer-initiierter Dialog, z.B. durch Menüs.
+        *   **Form Filling Dialog:** Ausfüllen von computer-angebotenen Formularen.
+        *   **Systeminitiierter Dialog:** Computer informiert über ein Ereignis und bietet Reaktionsmöglichkeiten.
+        *   **Offener Dialog (nicht angeleitet):** Der Mensch erklärt frei, was er möchte (z.B. per Spracheingabe).
+
+        **Dialogmodalitäten (Welche Technik/Sinne werden genutzt?):**
+        *   **CLI** (Command Line Interpreter)
+        *   **TUI** (Text User Interface)
+        *   **GUI** (Graphical User Interface)
+        *   **VUI** (Voice User Interface)
+        *   **HUI** (Haptic User Interface)
+    tags: ["VL_Benutzungsoberfläche", "Klassifikation", "Dialogform", "Dialogmodalität", "Slide_7-8"]
+
+  - model: "Basic"
+    uid: "tam-model-002b"
+    fields:
+      Front: |
+        Erläutern Sie das **Technology Acceptance Model (TAM)** nach Davis.
+      Back: |
+        Das TAM erklärt die Akzeptanz von Technologien durch Nutzer. Die Kausalkette ist wie folgt:
+        1.  **Wahrgenommene Nützlichkeit** (*Perceived Usefulness*) und **Wahrgenommene Benutzungsfreundlichkeit** (*Perceived Ease of Use*) sind die zentralen externen Faktoren.
+        2.  Diese beeinflussen die **Einstellung zur Nutzung** (*Attitude Toward Using*).
+        3.  Die Einstellung bestimmt die **Nutzungsintention** (*Behavioral Intention to Use*).
+        4.  Die Intention führt zur **tatsächlichen Nutzung** (*Actual System Use*).
+
+        *(Siehe Diagramm auf Folie 13)*
+    tags: ["VL_Benutzungsoberfläche", "TAM", "Akzeptanzmodell", "Usability", "Slide_13"]
+
+  - model: "Basic"
+    uid: "ui-prinzipien-003c"
+    fields:
+      Front: |
+        Definieren Sie die drei Grundprinzipien der Oberflächengestaltung: **Usability, Ergonomie** und **Barrierefreiheit**.
+      Back: |
+        *   **Usability (Benutzungsfreundlichkeit):** Bezeichnet die vom Nutzer erlebte **Nutzungsqualität** bei der Interaktion. Eine einfache, zur Aufgabe passende Bedienung gilt als benutzungsfreundlich.
+
+        *   **Ergonomie:** Die Wissenschaft von der Gesetzmäßigkeit menschlicher Arbeit. Ziel ist die Schaffung **geeigneter Ausführungsbedingungen** für den Menschen.
+
+        *   **Barrierefreiheit:** Die Anforderung, dass eine Oberfläche von **allen Nutzern** unabhängig von körperlichen/technischen Möglichkeiten uneingeschränkt genutzt werden kann.
+    tags: ["VL_Benutzungsoberfläche", "Prinzipien", "Usability", "Ergonomie", "Barrierefreiheit", "Slide_15-16"]
+
+  - model: "Basic"
+    uid: "barrierefrei-004d"
+    fields:
+      Front: |
+        Nennen Sie die 4 Hauptkriterien für **barrierefreie Webseiten** nach dem European Accessibility Act (EAA).
+      Back: |
+        Die vier Kriterien sind (oft unter dem Akronym **POUR** zusammengefasst):
+        1.  **Wahrnehmbar (Perceivable):** Informationen müssen für die Sinne wahrnehmbar sein (z.B. durch Textalternativen für Bilder).
+        2.  **Bedienbar (Operable):** Die Benutzeroberfläche und Navigation müssen bedienbar sein (z.B. per Tastatur).
+        3.  **Verständlich (Understandable):** Informationen und die Bedienung müssen verständlich sein (z.B. durch einfache, lesbare Sprache).
+        4.  **Robust:** Inhalte müssen von einer Vielzahl von User Agents (einschließlich assistiver Technologien) interpretiert werden können.
+    tags: ["VL_Benutzungsoberfläche", "Barrierefreiheit", "EAA", "POUR", "Slide_17"]
+
+  - model: "Basic"
+    uid: "ui-standards-005e"
+    fields:
+      Front: |
+        Nennen und charakterisieren Sie die drei in der Vorlesung genannten **Standards für Benutzungsoberflächen**.
+      Back: |
+        *   **WIMP (Apple, Mitte 80er Jahre):**
+            *   Erster weit verbreiteter Standard für GUIs.
+            *   Besteht aus den vier Elementgruppen: **W**indows, **I**cons, **M**enu, **P**ointer.
+
+        *   **Common User Access (CUA) (IBM, Ende 80er Jahre):**
+            *   Ein Styleguide mit Handlungsanweisungen für ein konsistentes Design von Benutzeroberflächen über verschiedene Hardwarearchitekturen hinweg.
+
+        *   **DIN EN ISO 9241-110 ff.:**
+            *   Eine umfassende Norm, die ergonomische Anforderungen für Bürotätigkeiten mit Bildschirmgeräten festlegt und Gestaltungsbereiche wie Gebrauchstauglichkeit und Dialoggestaltung definiert.
+    tags: ["VL_Benutzungsoberfläche", "Standards", "WIMP", "CUA", "DIN-ISO-9241", "Slide_18"]
+
+  - model: "Basic"
+    uid: "ergo-kriterien-006f"
+    fields:
+      Front: |
+        Nennen Sie die 7 **Ergonomiekriterien** der Dialoggestaltung nach DIN EN ISO 9241-110.
+      Back: |
+        1.  Aufgabenangemessenheit
+        2.  Selbstbeschreibungsfähigkeit
+        3.  Steuerbarkeit
+        4.  Fehlerrobustheit
+        5.  Erwartungskonformität
+        6.  Individualisierbarkeit
+        7.  Lernförderlichkeit
+    tags: ["VL_Benutzungsoberfläche", "Ergonomie", "DIN-ISO-9241", "Kriterien", "Slide_22-24"]
+
+  - model: "Basic"
+    uid: "ergo-kriterien-007g"
+    fields:
+      Front: |
+        Erläutern Sie die Ergonomiekriterien **Aufgabenangemessenheit**, **Selbstbeschreibungsfähigkeit** und **Erwartungskonformität**.
+      Back: |
+        *   **Aufgabenangemessenheit:** Ein Dialog unterstützt den Benutzer, seine Arbeitsaufgabe **effektiv und effizient** zu erledigen (z.B. durch passende Funktionalitäten, Vermeidung unnötiger Eingaben).
+
+        *   **Selbstbeschreibungsfähigkeit:** Jeder einzelne Dialogschritt ist durch Rückmeldungen des Systems **unmittelbar verständlich** oder wird auf Anfrage erklärt. Das System ist ohne Handbuch nutzbar.
+
+        *   **Erwartungskonformität:** Der Dialog ist **konsistent** und entspricht den Merkmalen des Benutzers (z.B. Kenntnisse, Erfahrungen, anerkannte Konventionen). Der Arbeitsablauf im System stimmt mit dem erwarteten Ablauf überein.
+    tags: ["VL_Benutzungsoberfläche", "Ergonomie", "DIN-ISO-9241", "Kriterien", "Slide_22", "Slide_24"]
+
+  - model: "Basic"
+    uid: "ergo-kriterien-008h"
+    fields:
+      Front: |
+        Erläutern Sie die Ergonomiekriterien **Steuerbarkeit**, **Fehlerrobustheit**, **Individualisierbarkeit** und **Lernförderlichkeit**.
+      Back: |
+        *   **Steuerbarkeit:** Der Benutzer ist in der Lage, den Dialogablauf zu **starten, seine Richtung und Geschwindigkeit zu beeinflussen**, bis das Ziel erreicht ist.
+
+        *   **Fehlerrobustheit:** Das beabsichtigte Arbeitsergebnis wird trotz **erkennbar fehlerhafter Eingaben** mit minimalem oder keinem Korrekturaufwand erreicht (z.B. durch korrigierbare Fehleingaben).
+
+        *   **Individualisierbarkeit:** Das Dialogsystem lässt **Anpassungen** an die Erfordernisse der Arbeitsaufgabe sowie an die individuellen Fähigkeiten und Vorlieben des Benutzers zu.
+
+        *   **Lernförderlichkeit:** Der Dialog ist so gestaltet, dass er das **Erlernen** der Bedienung unterstützt und anleitet (z.B. durch intuitive Bedienbarkeit).
+    tags: ["VL_Benutzungsoberfläche", "Ergonomie", "DIN-ISO-9241", "Kriterien", "Slide_23-24"]

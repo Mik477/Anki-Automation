@@ -1,0 +1,123 @@
+deck: "Management der Informationssysteme::VL10_Datenhaltung_Integration_Sicherheit"
+cards:
+  - model: "Basic"
+    uid: "dh-inmem-001a"
+    fields:
+      Front: |
+        Erläutern Sie das **In-memory Speicherkonzept**: Was ist der Hauptvorteil, was die größte Gefahr und wie wird diese gelöst?
+      Back: |
+        Das In-memory Speicherkonzept nutzt primär den flüchtigen **Arbeitsspeicher (RAM)** als Datenspeicher anstelle von Festplatten.
+
+        *   **Hauptvorteil:** Deutlich **schnellere Zugriffszeiten**, da mechanische Lese-/Schreibvorgänge entfallen. Ideal für Anwendungen, die Echtzeit-Performance benötigen (z.B. Handelsplattformen).
+        *   **Größte Gefahr:** **Datenverlust** bei Stromausfall, da der Arbeitsspeicher flüchtig ist.
+        *   **Lösung:**
+            1.  **Replikation:** Schreiben der Daten bei Bedarf oder periodisch auf eine persistente Festplatte.
+            2.  **Transaction Logs:** Dokumentation von Bearbeitungsstatus und Transaktionen, um den letzten konsistenten Zustand wiederherstellen zu können.
+    tags: ["VL_Datenhaltung_Fortsetzung", "Physische-Speicherung", "In-Memory", "Slide_11"]
+
+  - model: "Basic"
+    uid: "dh-oo-vs-or-002b"
+    fields:
+      Front: |
+        Vergleichen Sie rein **objektorientierte** und **objektrelationale** Datenbanken.
+      Back: |
+        *   **Objektorientierte Datenbank (OODBMS):**
+            *   **Grundprinzip:** Speichert **vollständige Objekte** inklusive ihrer **Methoden** (Verhalten).
+            *   **Vorteil:** Vermeidet den **Strukturbruch** zwischen objektorientierter Programmierung und der Speicherung, da das Objektmodell direkt abgebildet wird.
+
+        *   **Objektrelationale Datenbank (ORDBMS):**
+            *   **Grundprinzip:** Ist eine **Erweiterung relationaler Systeme** um objektorientierte Eigenschaften (z.B. Typhierarchien, benutzerdefinierte komplexe Datentypen).
+            *   **Struktur:** Die Daten (auch Objekte) sind weiterhin in **Relationen (Tabellen)** organisiert. Sie stellt einen Kompromiss dar.
+    tags: ["VL_Datenhaltung_Fortsetzung", "Datenbankmodelle", "Objektorientiert", "Objektrelational", "Slide_13", "Slide_15"]
+
+  - model: "Basic"
+    uid: "mw-arten-003c"
+    fields:
+      Front: |
+        Nennen Sie die drei Hauptarten von **Middleware** und ihren primären Zweck.
+      Back: |
+        1.  **Datenbank-Middleware:**
+            *   **Zweck:** Ermöglicht den **Datenzugriff** auf verschiedene, potenziell heterogene Datenbanken.
+            *   *Beispiele: DB-Schnittstellen (ODBC), Gateways.*
+
+        2.  **Zugangschaffende Middleware:**
+            *   **Zweck:** Ermöglicht den **Zugang zu Funktionalitäten von Altsystemen**, die keine modernen Schnittstellen bieten.
+            *   *Beispiele: Screenscraper, Wrapper.*
+
+        3.  **Zugreifende Middleware:**
+            *   **Zweck:** Gestattet die **Nutzung von Dienstleistungen (Funktionszugang)**, die ein Server für einen Client bereitstellt.
+            *   *Beispiele: Remote Procedure Calls (RPC), Service Oriented Architecture (SOA).*
+    tags: ["VL_Integration", "Middleware", "Klassifikation", "Slide_41"]
+
+  - model: "Basic"
+    uid: "soa-vergleich-004d"
+    fields:
+      Front: |
+        Definieren und differenzieren Sie **Service Oriented Architecture (SOA)**, **Microservices** und **Web Services**.
+      Back: |
+        *   **SOA (Service Oriented Architecture):**
+            *   Ein übergeordneter **Architekturstil**, bei dem Anwendungen aus wiederverwendbaren, lose gekoppelten **Diensten (Services)** aufgebaut werden.
+
+        *   **Microservices:**
+            *   Ein **spezifischer Architekturstil** und eine konkrete Umsetzung von SOA, bei der eine große Anwendung in viele **kleine, unabhängige Dienste** zerlegt wird, die jeweils eine spezifische Geschäftsfunktion abbilden.
+
+        *   **Web Services:**
+            *   Eine **Technologie** zur Realisierung von Diensten im Rahmen einer SOA. Sie nutzen standardisierte Internet-Protokolle (wie HTTP, SOAP, REST), um die Kommunikation zwischen den Diensten plattformunabhängig zu ermöglichen.
+    tags: ["VL_Integration", "SOA", "Microservices", "Web-Services", "Architektur", "Slide_49", "Slide_51", "Slide_52"]
+
+  - model: "Basic"
+    uid: "container-orch-005e"
+    fields:
+      Front: |
+        Was ist die Aufgabe von **Docker (Containerisierung)** und was ist die Aufgabe von **Kubernetes (Orchestrierung)**?
+      Back: |
+        *   **Docker (Containerisierung):**
+            *   **Aufgabe:** Verpackt eine Anwendung zusammen mit all ihren Abhängigkeiten (Code, Laufzeitumgebung, Bibliotheken, Konfigurationen) in eine portable, isolierte und ausführbare Einheit, den **Container**. Dies stellt sicher, dass die Anwendung in jeder Umgebung gleich läuft.
+
+        *   **Kubernetes (K8s) (Orchestrierung):**
+            *   **Aufgabe:** **Verwaltet, skaliert und automatisiert** den Betrieb von Containern im großen Stil. Kubernetes kümmert sich um die Bereitstellung, Lastverteilung, Ausfallsicherheit und Skalierung von containerisierten Anwendungen über eine Gruppe von Maschinen (Cluster) hinweg.
+    tags: ["VL_Integration", "Containerisierung", "Docker", "Orchestrierung", "Kubernetes", "Slide_54-55"]
+
+  - model: "Basic"
+    uid: "iam-konzepte-006f"
+    fields:
+      Front: |
+        Was ist **Identitäts- & Zugriffsmanagement (IAM)** und welche drei Kernprozesse umfasst es?
+      Back: |
+        **IAM (Identity and Access Management)** ist eine Methode zur Überprüfung der Identitäten von Netzwerkeinheiten (Benutzer, Geräte) und der Verwaltung ihrer Zugriffsrechte auf Unternehmensressourcen.
+
+        Die drei Kernprozesse sind:
+        1.  **Identifizierung:** Die Fähigkeit, einen Benutzer oder ein Gerät eindeutig zu erkennen ("Wer bist du?").
+        2.  **Authentifizierung:** Der Prozess der Überprüfung der behaupteten Identität ("Beweise, dass du es bist", z.B. durch Passwort, MFA).
+        3.  **Autorisierung:** Die Gewährung von spezifischen Zugriffsrechten auf Ressourcen nach erfolgreicher Authentifizierung ("Was darfst du tun?").
+    tags: ["VL_Datenschutz", "IAM", "Identifizierung", "Authentifizierung", "Autorisierung", "Slide_64-65"]
+
+  - model: "Basic"
+    uid: "zugriff-modelle-007g"
+    fields:
+      Front: |
+        Vergleichen Sie **Wahlfreie (DAC)**, **Regelbasierte (MAC)** und **Rollenbasierte (RBAC)** Zugriffskontrolle.
+      Back: |
+        *   **Wahlfreie Zugriffskontrolle (DAC - Discretionary Access Control):**
+            *   Der **Eigentümer** eines Objekts (z.B. einer Datei) ist für dessen Schutz verantwortlich und kann die Zugriffsrechte (lesen, schreiben) für andere Benutzer frei vergeben.
+
+        *   **Regelbasierte Zugriffskontrolle (MAC - Mandatory Access Control):**
+            *   Der Zugriff wird durch **zentrale, systemweite Regeln** gesteuert. Subjekte und Objekte erhalten Sicherheitsmarkierungen (z.B. "geheim", "öffentlich"), und der Zugriff wird basierend auf dem Vergleich dieser Markierungen erlaubt oder verweigert.
+
+        *   **Rollenbasierte Zugriffskontrolle (RBAC - Role Based Access Control):**
+            *   Rechte werden nicht direkt an Benutzer, sondern an **Rollen** (z.B. "Sachbearbeiter", "Admin") vergeben. Benutzer erhalten ihre Berechtigungen durch die Zuweisung zu einer oder mehreren Rollen. Dies vereinfacht die Verwaltung.
+    tags: ["VL_Datenschutz", "Zugriffskontrolle", "DAC", "MAC", "RBAC", "Slide_67"]
+
+  - model: "Basic"
+    uid: "sso-oidc-oauth-008h"
+    fields:
+      Front: |
+        Was ist **Single Sign-On (SSO)** und welche Rolle spielen dabei **OpenID Connect (OIDC)** und **OAuth2**?
+      Back: |
+        *   **Single Sign-On (SSO):**
+            *   Ein Authentifizierungsschema, das es einem Benutzer ermöglicht, sich mit **einer einzigen ID und einem einzigen Login** bei mehreren voneinander unabhängigen Softwaresystemen anzumelden.
+
+        *   **Rolle der Protokolle:**
+            *   **OpenID Connect (OIDC):** Ist ein Protokoll für die **Authentifizierung**. Es bestätigt die Identität des Benutzers ("Wer bist du?"). Es wird oft für SSO bei Verbraucheranwendungen genutzt.
+            *   **OAuth2:** Ist ein Protokoll für die **Autorisierung**. Es gewährt einer Anwendung im Namen des Benutzers Zugriff auf dessen Ressourcen in einem anderen Dienst, ohne die Anmeldedaten preiszugeben ("Was darf diese App in deinem Namen tun?").
+    tags: ["VL_Datenschutz", "Zugriffskontrolle", "SSO", "OpenID", "OAuth2", "Slide_69-70"]

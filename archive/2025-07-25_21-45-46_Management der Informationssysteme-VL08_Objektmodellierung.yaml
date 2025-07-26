@@ -1,0 +1,101 @@
+deck: "Management der Informationssysteme::VL08_Objektmodellierung"
+cards:
+  - model: "Basic"
+    uid: "om-paradigma-001a"
+    fields:
+      Front: |
+        Erläutern Sie das Paradigma der **Objektmodellierung** und definieren Sie die Basiskonzepte: **Klasse, Objekt** und **Operation**.
+      Back: |
+        **Paradigma:**
+        Die zentrale Idee ist die **Kapselung** von zusammengehörigen **Daten (Attributen)** und **Funktionalität (Methoden/Operationen)** in einer Einheit, dem **Objekt**. Im Gegensatz zur funktions- oder datenorientierten Modellierung werden Daten und Funktionen nicht getrennt betrachtet.
+
+        **Basiskonzepte:**
+        *   **Klasse:** Eine Schablone oder ein Bauplan für gleichartige Objekte. Sie definiert die gemeinsamen Attribute und Operationen (z.B. die Klasse `Auto`).
+        *   **Objekt:** Eine konkrete Ausprägung (Instanz) einer Klasse mit spezifischen Attributwerten (z.B. *mein spezifischer VW Golf* ist ein Objekt der Klasse `Auto`).
+        *   **Operation (Methode):** Eine Funktion oder Fähigkeit, die eine Klasse besitzt und die den Zustand ihrer Objekte verändern oder abfragen kann (z.B. `beschleunigen()`, `getFarbe()`).
+    tags: ["VL_Objektmodellierung", "Paradigma", "Basiskonzepte", "Klasse", "Objekt", "Slide_6-7", "Slide_10", "Slide_13", "Slide_16"]
+
+  - model: "Basic"
+    uid: "om-modelle-002b"
+    fields:
+      Front: |
+        Unterscheiden Sie **statische** und **dynamische Modelle** in der Objektmodellierung und nennen Sie jeweils ein Beispiel.
+      Back: |
+        *   **Statisches Modell:**
+            *   **Was es beschreibt:** Die **Struktur** und die **Beziehungen** der Elemente eines Systems, die über die Zeit konstant bleiben.
+            *   **Fokus:** Klassen, ihre Attribute, Operationen und ihre Beziehungen zueinander (Assoziationen, Vererbung).
+            *   **Beispiel:** **UML-Klassendiagramm**.
+
+        *   **Dynamisches Modell:**
+            *   **Was es beschreibt:** Das **Verhalten** des Systems über die Zeit.
+            *   **Fokus:** Die Interaktionen zwischen Objekten (Nachrichtenaustausch) und die Zustandsänderungen einzelner Objekte.
+            *   **Beispiele:** **UML-Sequenzdiagramm**, **UML-Zustandsdiagramm**.
+    tags: ["VL_Objektmodellierung", "Modelltypen", "Statisches-Modell", "Dynamisches-Modell", "Slide_8", "Slide_19", "Slide_31"]
+
+  - model: "Basic"
+    uid: "om-beziehungen-003c"
+    fields:
+      Front: |
+        Vergleichen Sie die Beziehungstypen **Assoziation**, **Aggregation** und **Komposition** in einem UML-Klassendiagramm.
+      Back: |
+        Alle drei beschreiben Beziehungen zwischen Klassen, unterscheiden sich aber in ihrer Stärke:
+
+        *   **Assoziation (Linie):**
+            *   Eine allgemeine, gleichberechtigte Beziehung zwischen zwei Klassen. Die Objekte existieren unabhängig voneinander.
+
+        *   **Aggregation (Linie mit leerer Raute):**
+            *   Eine "ist-Teil-von"-Beziehung (Ganzes-Teil-Beziehung).
+            *   Die Teile können **auch ohne das Ganze existieren**.
+            *   Beispiel: Ein `Rad` (Teil) kann auch ohne ein `Fahrrad` (Ganzes) existieren.
+
+        *   **Komposition (Linie mit gefüllter Raute):**
+            *   Eine starke "ist-Teil-von"-Beziehung mit **Existenzabhängigkeit**.
+            *   Die Teile können **NICHT ohne das Ganze existieren**. Wird das Ganze gelöscht, werden auch die Teile gelöscht.
+            *   Beispiel: Eine `Bestellposition` (Teil) existiert nicht ohne die zugehörige `Bestellung` (Ganzes).
+    tags: ["VL_Objektmodellierung", "Klassendiagramm", "Assoziation", "Aggregation", "Komposition", "Slide_22", "Slide_25"]
+
+  - model: "Basic"
+    uid: "om-vererbung-004d"
+    fields:
+      Front: |
+        Was ist **Vererbung** in der Objektmodellierung und was ist eine **abstrakte Klasse**?
+      Back: |
+        **Vererbung (Generalisierung/Spezialisierung):**
+        *   Beschreibt eine hierarchische **"is-a"-Beziehung** zwischen einer allgemeinen **Oberklasse** (Superklasse, z.B. `Immobilie`) und einer spezielleren **Unterklasse** (Subklasse, z.B. `Einfamilienhaus`).
+        *   Die Unterklasse **erbt** automatisch alle Attribute und Operationen der Oberklasse und kann eigene hinzufügen.
+
+        **Abstrakte Klasse:**
+        *   Eine Klasse, die als **reine Schablone** für ihre Unterklassen dient.
+        *   Von einer abstrakten Klasse können **keine direkten Objekte (Instanzen)** erzeugt werden. Sie wird oft kursiv oder mit dem Zusatz `{abstract}` gekennzeichnet.
+    tags: ["VL_Objektmodellierung", "Klassendiagramm", "Vererbung", "Abstrakte-Klasse", "Slide_26-28"]
+
+  - model: "Basic"
+    uid: "om-interaktion-005e"
+    fields:
+      Front: |
+        Vergleichen Sie **Sequenzdiagramme** und **Kollaborationsdiagramme** hinsichtlich ihres Fokus.
+      Back: |
+        Beide sind **Interaktionsdiagramme** und zeigen das dynamische Verhalten durch den Austausch von Botschaften (Nachrichten) zwischen Objekten.
+
+        *   **Sequenzdiagramm:**
+            *   **Fokus:** Die **zeitliche Abfolge** der Interaktionen.
+            *   **Darstellung:** Die vertikale Achse ist die **Zeitachse**. Objekte haben "Lebenslinien", entlang derer die Nachrichten chronologisch angeordnet sind.
+
+        *   **Kollaborationsdiagramm (Kommunikationsdiagramm):**
+            *   **Fokus:** Die **Beziehungsstruktur und Zusammenarbeit** der Objekte.
+            *   **Darstellung:** Ähnelt einem Klassendiagramm. Die zeitliche Abfolge wird durch **Nummerierung** der Nachrichten dargestellt.
+    tags: ["VL_Objektmodellierung", "Dynamisches-Modell", "Sequenzdiagramm", "Kollaborationsdiagramm", "Slide_33-37"]
+
+  - model: "Basic"
+    uid: "om-zustand-006f"
+    fields:
+      Front: |
+        Was modelliert ein **Zustandsdiagramm** und aus welchen 3 Kernelementen besteht es?
+      Back: |
+        Ein Zustandsdiagramm (oder Zustandsautomat) modelliert den **Lebenszyklus eines einzelnen Objekts** einer Klasse. Es zeigt alle möglichen Zustände, die das Objekt annehmen kann, und wie es von einem Zustand in einen anderen übergeht.
+
+        **3 Kernelemente:**
+        1.  **Zustand:** Eine Periode, in der ein Objekt auf ein Ereignis wartet (z.B. "Buch ist ausgeliehen").
+        2.  **Transition:** Der gerichtete Übergang von einem Zustand in den nächsten.
+        3.  **Ereignis:** Der Auslöser für eine Transition (Zustandsänderung), z.B. der Aufruf einer Operation (`/ zurückgeben`).
+    tags: ["VL_Objektmodellierung", "Dynamisches-Modell", "Zustandsdiagramm", "Slide_38-39"]

@@ -1,0 +1,127 @@
+deck: "Management der Informationssysteme::VL07_Datenmodellierung"
+cards:
+  - model: "Basic"
+    uid: "dm-wissen-001a"
+    fields:
+      Front: |
+        Beschreiben Sie die 5 Ebenen der **Wissenspyramide** und die jeweils transformierende Aktion.
+      Back: |
+        Die Pyramide beschreibt die hierarchische Veredelung von Zeichen zu Wissen/Entscheidungen (von unten nach oben):
+
+        1.  **Zeichen:** Reine Symbole ohne Bedeutung.
+        2.  --(Syntax)--> **Daten:** Zeichen mit einer formalen Struktur.
+        3.  --(Kontext)--> **Informationen:** Daten, die in einen relevanten Zusammenhang gestellt werden.
+        4.  --(Vernetzung)--> **Wissen:** Vernetzte Informationen, oft durch Erfahrung angereichert.
+        5.  --(Zweck/Anwendung)--> **Entscheidung:** Anwendung von Wissen auf ein spezifisches Problem.
+    tags: ["VL_Datenmodellierung", "Wissenspyramide", "Slide_7"]
+
+  - model: "Basic"
+    uid: "dm-integ-002b"
+    fields:
+      Front: |
+        Was sind die **Ziele und Vorteile** der Datenintegration?
+      Back: |
+        **Ziele:**
+        *   Fachlich gleiche Daten werden nur **einmal gespeichert**.
+        *   **Datenzugriff** für alle betroffenen Anwender und Anwendungen wird ermöglicht.
+
+        **Vorteile:**
+        *   Verringern von **Datenredundanzen**.
+        *   Erhöhen der **Datenintegrität**.
+        *   Reduktion des Erfassungsaufwandes.
+        *   Schaffen der Voraussetzung für Funktions- und Prozessintegration.
+        *   Insgesamt verbesserte Informationsversorgung der Entscheidungsträger.
+    tags: ["VL_Datenmodellierung", "Datenintegration", "Slide_10"]
+
+  - model: "Basic"
+    uid: "dm-er-elem-003c"
+    fields:
+      Front: |
+        Definieren Sie die vier Grundelemente des **Entity-Relationship-Modells (ERM)**.
+      Back: |
+        1.  **Entitytyp:** Eine Klasse von realen oder abstrakten Informationsobjekten mit eigener Bedeutung (z.B. `Kunde`, `Artikel`). Eine konkrete Ausprägung ist ein *Entity*.
+        2.  **Attribut:** Eine Eigenschaft, die einen Entitytyp näher beschreibt (z.B. `Kundenname`, `Artikelpreis`).
+        3.  **Relationshiptyp:** Eine logische Beziehung zwischen zwei oder mehr Entitytypen (z.B. die Beziehung `kauft` zwischen `Kunde` und `Artikel`).
+        4.  **Kardinalität:** Gibt an, mit wie vielen Entities eines Typs ein Entity eines anderen Typs in Beziehung stehen **kann** oder **muss**.
+    tags: ["VL_Datenmodellierung", "ER-Modell", "Grundelemente", "Slide_12"]
+
+  - model: "Basic"
+    uid: "dm-minmax-004d"
+    fields:
+      Front: |
+        Erläutern Sie das Konzept der **Min-Max-Notation `(min, max)`** im ER-Modell und geben Sie ein Beispiel für `(0,n)` und `(1,1)`.
+      Back: |
+        Die Min-Max-Notation gibt an, an wie vielen Beziehungen ein Entity eines Typs **minimal (min)** und **maximal (max)** teilnehmen muss/kann.
+
+        *   **`min`:**
+            *   `0` = optionale Teilnahme
+            *   `1` = obligatorische (zwingende) Teilnahme
+        *   **`max`:**
+            *   `1` = maximal eine Beziehung
+            *   `n` (oder `m`) = beliebig viele Beziehungen
+
+        **Beispiele:**
+        *   Ein Kunde **kann keinen oder mehrere** Aufträge erteilen: `(0,n)`
+        *   Ein Auftrag wird von **exakt einem** Kunden erteilt: `(1,1)`
+    tags: ["VL_Datenmodellierung", "ER-Modell", "Kardinalität", "Min-Max-Notation", "Slide_16"]
+
+  - model: "Basic"
+    uid: "dm-leseregel-005e"
+    fields:
+      Front: |
+        Wie liest man eine **Min-Max-Kardinalität** korrekt? Geben Sie ein Beispiel für die Beziehung zwischen `Kunde` und `Auftrag`.
+      Back: |
+        Man liest immer **von einem Entitytyp über die Beziehung zum anderen Entitytyp**. Die Kardinalität, die **nahe am Ziel-Entitytyp** steht, gehört zur Aussage über den **Start-Entitytyp**.
+
+        **Beispiel:**
+        `Kunde` -- `(0,n)` -- erteilt -- `(1,1)` -- `Auftrag`
+
+        *   **Leserichtung 1 (von Kunde zu Auftrag):** "Ein `Kunde` kann `(0,n)` `Aufträge` erteilen." (kann keinen oder mehrere Aufträge haben)
+        *   **Leserichtung 2 (von Auftrag zu Kunde):** "Ein `Auftrag` wird von `(1,1)` `Kunden` erteilt." (muss exakt einen Kunden haben)
+    tags: ["VL_Datenmodellierung", "ER-Modell", "Kardinalität", "Min-Max-Notation", "Slide_16-17"]
+
+  - model: "Basic"
+    uid: "dm-general-006f"
+    fields:
+      Front: |
+        Was ist das **Generalisierungskonzept** ("is-a"-Beziehung) im ER-Modell und wie wird es dargestellt?
+      Back: |
+        Das Generalisierungskonzept beschreibt eine hierarchische Beziehung zwischen einem übergeordneten Entitytyp (Superklasse, z.B. `Mitarbeiter`) und spezialisierten Untertypen (Subklassen, z.B. `Angestellter`, `Arbeiter`).
+
+        *   **Funktion:** Die Subklassen **erben** alle Attribute der Superklasse und können zusätzliche eigene Attribute besitzen.
+        *   **Beziehung:** Eine "is-a"-Beziehung (Ein `Angestellter` **ist ein** `Mitarbeiter`).
+        *   **Darstellung:** Oft durch ein Dreieck, dessen Spitze auf die Superklasse zeigt.
+    tags: ["VL_Datenmodellierung", "ER-Modell", "Generalisierung", "is-a", "Slide_19"]
+
+  - model: "Basic"
+    uid: "dm-zeit-007g"
+    fields:
+      Front: |
+        Nennen Sie die drei Möglichkeiten, das Attribut **'Zeit'** in einem ER-Modell darzustellen.
+      Back: |
+        1.  **Als Attribut an einem Entitytyp:**
+            *   Der Zeitstempel ist eine direkte Eigenschaft des Objekts selbst (z.B. `Erstelldatum` am Entity `Auftrag`).
+
+        2.  **Als Attribut an einem Relationshiptyp:**
+            *   Der Zeitstempel beschreibt den Zeitpunkt, an dem die Beziehung eingegangen wurde (z.B. `Bestelldatum` an der Beziehung `Kunde kauft Artikel`).
+
+        3.  **Als eigenständiger Entitytyp `Zeit`:**
+            *   Wird verwendet, wenn Zeit selbst ein zentrales Planungsobjekt ist, das mit vielen anderen Objekten in Beziehung steht.
+    tags: ["VL_Datenmodellierung", "ER-Modell", "Zeitmodellierung", "Slide_18"]
+
+  - model: "Basic"
+    uid: "dm-crud-008h"
+    fields:
+      Front: |
+        Was ist eine **Assoziationsmatrix (CRUD-Matrix)** und wofür wird sie verwendet?
+      Back: |
+        Eine **Assoziationsmatrix** ist ein Werkzeug, das den **Bezug zwischen Funktionen und Daten** visualisiert.
+
+        *   **Aufbau:** Die **Funktionen** oder Prozesse stehen in den Zeilen, die **Datenobjekte** (Entitytypen) in den Spalten.
+        *   **Zweck:** In den Zellen wird eingetragen, welche Art von Zugriff eine Funktion auf die Daten hat. Dies hilft, Datenverantwortlichkeiten zu klären und die Vollständigkeit von Prozessen zu prüfen.
+        *   **CRUD-Abkürzungen:**
+            *   **C** = Create (erstellen)
+            *   **R** = Read (lesen)
+            *   **U** = Update (aktualisieren)
+            *   **D** = Delete (löschen)
+    tags: ["VL_Datenmodellierung", "CRUD", "Assoziationsmatrix", "Slide_25-26"]

@@ -1,0 +1,155 @@
+deck: "Management der Informationssysteme::VL09_Datenhaltung"
+cards:
+  - model: "Basic"
+    uid: "dh-anford-001a"
+    fields:
+      Front: |
+        Nennen Sie die 6 zentralen Anforderungen an ein datenorientiertes DV-Konzept.
+      Back: |
+        1.  **Gute Performance** des Anwendungssystems soll gewährleistet sein.
+        2.  **Hohe Datensicherheit** (Schutz vor unbefugtem Zugriff, Verlust etc.).
+        3.  Datenbestände sollen **flexibel auswertbar** sein.
+        4.  Datenbestände sollen von **vielen Funktionen genutzt** werden können.
+        5.  **Aktuelle und konsistente Daten**.
+        6.  **Sparsamer Umgang** mit physischem Speicherplatz.
+    tags: ["VL_Datenhaltung", "Anforderungen", "DV-Konzept", "Slide_6"]
+
+  - model: "Basic"
+    uid: "dh-vergleich-002b"
+    fields:
+      Front: |
+        Vergleichen Sie die **Dateiorganisation** mit der **Datenbankorganisation** hinsichtlich Datenspeicherung, Datenzugriff, Datenstruktur und Redundanzen.
+      Back: |
+        | Merkmal | **Dateiorganisation** | **Datenbankorganisation** |
+        | :--- | :--- | :--- |
+        | **Datenspeicherung** | In programmspezifischen Dateien | In datenbankspezifischen Dateien |
+        | **Datenzugriff** | Direkter Zugriff auf **physische** Dateien | Zugriff auf **logische** Dateien (Sichten) |
+        | **Datenstruktur** | **Verflechtung** von logischer und physischer Struktur | **Trennung** von logischer und physischer Struktur |
+        | **Redundanzen** | Kaum zu vermeiden, führt zu **inkonsistenten Daten** | Werden vermieden, führt zu **konsistenten Daten** |
+    tags: ["VL_Datenhaltung", "Dateiorganisation", "Datenbankorganisation", "Vergleich", "Slide_19-20"]
+
+  - model: "Basic"
+    uid: "dh-ebenen-003c"
+    fields:
+      Front: |
+        Beschreiben Sie die drei Ebenen eines Datenbanksystems (Interne, Konzeptionelle, Externe).
+      Back: |
+        1.  **Externe Ebene (Benutzersicht):**
+            *   Stellt die für den Nutzer relevanten Daten in Form von logischen Dateien (Sichten) bereit.
+            *   Die Interaktion erfolgt über eine `Data-Manipulation-Language` (DML), z.B. SQL-Abfragen.
+
+        2.  **Konzeptionelle Ebene (Logische Gesamtsicht):**
+            *   Beschreibt die logische Gesamtstruktur aller zu speichernden Daten und deren Beziehungen.
+            *   Die Entwurfssprache ist oft das ER-Modell; die Beschreibungssprache ist die `Data-Description-Language` (DDL).
+
+        3.  **Interne Ebene (Physische Sicht):**
+            *   Beschreibt die physische Organisation und Speicherung der Daten auf den Speichermedien.
+            *   Die Beschreibungssprache ist die `Data-Storage-Description-Language` (DSDL).
+    tags: ["VL_Datenhaltung", "Datenbanksystem", "Architektur", "Ebenenmodell", "Slide_17-18"]
+
+  - model: "Basic"
+    uid: "dh-modelle-004d"
+    fields:
+      Front: |
+        Nennen und charakterisieren Sie die vier grundlegenden Datenbankmodelle.
+      Back: |
+        1.  **Hierarchisches Modell:**
+            *   Daten werden in einer starren **Baumstruktur** organisiert. Jeder Datensatz hat genau einen Vorgänger (Elternteil).
+
+        2.  **Relationales Modell:**
+            *   Am weitesten verbreitet. Daten und ihre Beziehungen werden in **Tabellen (Relationen)** gespeichert, die aus Zeilen (Tupel) und Spalten (Attributen) bestehen.
+
+        3.  **Objektorientiertes Modell:**
+            *   Speichert **vollständige Objekte** einschließlich ihrer Attribute und Methoden (Verhalten). Vermeidet den Strukturbruch zwischen objektorientierter Programmierung und relationaler Speicherung.
+
+        4.  **Key-Value Modell:**
+            *   Einfachstes NoSQL-Modell. Der Zugriff auf beliebig strukturierte **Werte (Values)** erfolgt über einen eindeutigen **Schlüssel (Key)**.
+    tags: ["VL_Datenhaltung", "Datenbankmodelle", "Vergleich", "Hierarchisch", "Relational", "Objektorientiert", "Key-Value", "Slide_22", "Slide_29", "Slide_58", "Slide_63"]
+
+  - model: "Basic"
+    uid: "dh-erm-trans-005e"
+    fields:
+      Front: |
+        Wie werden **Entitytypen** sowie **1:1, 1:N** und **M:N-Beziehungen** aus einem ERM in Relationen (Tabellen) überführt?
+      Back: |
+        *   **Entitytyp:** Jeder Entitytyp wird zu einer **eigenen Tabelle**. Seine Attribute werden zu Spalten, der Primärschlüssel des Entitytyps wird zum Primärschlüssel der Tabelle.
+
+        *   **1:1-Beziehung:** Es wird **keine eigene Tabelle** für die Beziehung erstellt. Die Primärschlüssel der beiden Tabellen werden **wechselseitig** als Fremdschlüssel in die jeweils andere Tabelle aufgenommen.
+
+        *   **1:N-Beziehung:** Es wird **keine eigene Tabelle** für die Beziehung erstellt. Der Primärschlüssel der Tabelle auf der **'1'-Seite** wird als Fremdschlüssel in die Tabelle auf der **'N'-Seite** übernommen.
+
+        *   **M:N-Beziehung:** Die Beziehung wird zu einer **eigenen, neuen Relationstabelle**. Deren Primärschlüssel setzt sich aus den (als Fremdschlüssel dienenden) Primärschlüsseln der beiden ursprünglich beteiligten Tabellen zusammen.
+    tags: ["VL_Datenhaltung", "ER-Modell", "Relationenmodell", "Transformation", "Slide_33-36"]
+
+  - model: "Basic"
+    uid: "dh-anomalien-006f"
+    fields:
+      Front: |
+        Definieren Sie **Einfüge-, Änderungs- und Löschanomalie**.
+      Back: |
+        *   **Einfügeanomalie:** Ein neuer Datensatz kann nicht gespeichert werden, weil ein Attributwert für den (zusammengesetzten) Primärschlüssel fehlt. (Bsp.: Neuer Artikel kann nicht angelegt werden, solange er keinem Auftrag zugeordnet ist).
+
+        *   **Änderungsanomalie (Update-Anomalie):** Eine Information ist redundant gespeichert. Bei einer Änderung muss diese an mehreren Stellen erfolgen, was zu Inkonsistenzen führen kann. (Bsp.: Artikelname "Schelle" muss in zwei Zeilen geändert werden).
+
+        *   **Löschanomalie:** Durch das Löschen eines Datensatzes gehen unbeabsichtigt andere, noch benötigte Informationen verloren. (Bsp.: Wird der Artikel "Schelle" aus dem Sortiment genommen, geht die Information über Auftrag 579 verloren).
+    tags: ["VL_Datenhaltung", "Normalisierung", "Anomalien", "Slide_42"]
+
+  - model: "Basic"
+    uid: "dh-normalf-007g"
+    fields:
+      Front: |
+        Definieren Sie die **Erste (1NF), Zweite (2NF) und Dritte Normalform (3NF)**.
+      Back: |
+        *   **1. Normalform (1NF):** Eine Relation ist in 1NF, wenn alle ihre Attribute **atomar** sind, d.h. es gibt keine Wiederholungsgruppen (keine "Tupel im Tupel").
+
+        *   **2. Normalform (2NF):** Eine Relation ist in 2NF, wenn sie in 1NF ist und jedes Nicht-Schlüssel-Attribut **voll funktional vom gesamten Primärschlüssel** abhängig ist. (Problem tritt nur bei zusammengesetzten Primärschlüsseln auf).
+
+        *   **3. Normalform (3NF):** Eine Relation ist in 3NF, wenn sie in 2NF ist und **keine transitiven Abhängigkeiten** zwischen Nicht-Schlüssel-Attributen bestehen. (Ein Nicht-Schlüssel-Attribut darf nicht von einem anderen Nicht-Schlüssel-Attribut funktional abhängig sein).
+    tags: ["VL_Datenhaltung", "Normalisierung", "1NF", "2NF", "3NF", "Slide_45-50"]
+
+  - model: "Basic"
+    uid: "dh-integrit-008h"
+    fields:
+      Front: |
+        Unterscheiden Sie die **Entity-Integrität** von der **Referentiellen Integrität**.
+      Back: |
+        *   **Entity-Integrität (Entity Integrity Constraint):**
+            *   Bezieht sich auf die **Eindeutigkeit von Zeilen** in einer Tabelle.
+            *   Fordert, dass der **Primärschlüssel** einer Tabelle eindeutig sein muss und **niemals den Wert NULL** annehmen darf.
+
+        *   **Referentielle Integrität (Referential Integrity Constraint):**
+            *   Bezieht sich auf die **Konsistenz zwischen Tabellen**, die über Fremdschlüssel verbunden sind.
+            *   Fordert, dass ein **Fremdschlüsselwert** in einer abhängigen Tabelle entweder **NULL** ist oder als **Primärschlüsselwert** in der übergeordneten (referenzierten) Tabelle existieren muss.
+    tags: ["VL_Datenhaltung", "Integrität", "Entity-Integrität", "Referentielle-Integrität", "Slide_51"]
+
+  - model: "Basic"
+    uid: "dh-speicher-009i"
+    fields:
+      Front: |
+        Vergleichen Sie **zeilenorientierte** und **spaltenorientierte** physische Speicherung von Daten.
+      Back: |
+        *   **Zeilenorientierte Speicherung:**
+            *   **Prinzip:** Alle Attributwerte eines Datensatzes (einer Zeile) werden zusammenhängend auf dem Speichermedium abgelegt.
+            *   **Vorteil:** Sehr performant beim Einfügen, Ändern und Lesen **kompletter Datensätze**. Typisch für transaktionale Systeme (OLTP).
+
+        *   **Spaltenorientierte Speicherung:**
+            *   **Prinzip:** Alle Werte eines Attributs (einer Spalte) werden zusammenhängend gespeichert.
+            *   **Vorteil:** Sehr performant bei analytischen Abfragen (**OLAP**), die nur wenige Spalten über eine große Anzahl von Zeilen aggregieren, da nicht die gesamte Zeile gelesen werden muss.
+    tags: ["VL_Datenhaltung", "Physische-Speicherung", "Zeilenorientiert", "Spaltenorientiert", "Slide_55"]
+
+  - model: "Basic"
+    uid: "dh-keyval-010j"
+    fields:
+      Front: |
+        Nennen Sie die wesentlichen **Vorteile und Nachteile** von Key-Value-Datenbanken.
+      Back: |
+        **Vorteile:**
+        *   **Sehr skalierbar:** Gut für verteilte Systeme und große Datenmengen geeignet.
+        *   **Flexible Datenstruktur:** Die "Values" haben kein festes Schema.
+        *   **Schnelle Zugriffe:** Einfacher Zugriff über den "Key" ist extrem performant.
+
+        **Nachteile:**
+        *   **Eingeschränkte Abfragemöglichkeiten:** Komplexe Abfragen über die Inhalte der "Values" sind oft nicht oder nur ineffizient möglich.
+        *   **Keine Beziehungen zwischen Werten:** Das Modell unterstützt von sich aus keine Verknüpfungen.
+        *   **Geringe Datenqualität:** Durch das Fehlen eines Schemas ist die Konsistenz der Daten nicht systemseitig garantiert.
+    tags: ["VL_Datenhaltung", "Key-Value", "NoSQL", "Vorteile-Nachteile", "Slide_64"]

@@ -8,9 +8,9 @@ You are to follow **exactly the same method and principles** that were successfu
 ---
 
 **New Lecture Materials:**
-*   **Lecture:** **[Insert Course Name and Lecture Number/Topic, e.g., "Management der Informationssysteme, VL 3 - IT-Sicherheit"]**
-*   **Slides:** `[Link to or Attachment of the new PDF/PPTX Slides]`
-*   **Transcript:** `[Link to or Attachment of the new .txt Transcript File]`
+*   **Lecture**
+*   **Slides**
+*   **Transcript**
 
 ---
 

@@ -1,0 +1,153 @@
+deck: "Management der Informationssysteme::VL11_DV-Entwurf_Abschlussphasen"
+cards:
+  - model: "Basic"
+    uid: "verarb-mod-001a"
+    fields:
+      Front: |
+        Welche 3 **Aufgaben** und 3 **Merkmale** hat die **Modularisierung** in der Funktionsmodellierung?
+      Back: |
+        **Aufgaben der Modularisierung:**
+        1.  Verarbeitungslogik innerhalb der Module spezifizieren.
+        2.  Module gegeneinander abgrenzen.
+        3.  Schnittstellen zwischen den Modulen definieren.
+
+        **Merkmale von Modulen:**
+        1.  **Hierarchiebildung** durch Unterprogrammtechnik.
+        2.  Spezifizierte **Schnittstellen** für Datenfluss und Kontrollfluss.
+        3.  Abdecken technischer Funktionalitäten wie DB-Zugriff, Zugriff auf externe Ressourcen und Fehlerbehandlung.
+    tags: ["VL_Verarbeitung", "Modularisierung", "Funktionsmodellierung", "Slide_25"]
+
+  - model: "Basic"
+    uid: "verarb-para-002b"
+    fields:
+      Front: |
+        Vergleichen Sie das **prozedurale** und das **objektorientierte** Programmierparadigma.
+      Back: |
+        *   **Prozedurale Sprachen:**
+            *   **Grundprinzip:** Strikte **Trennung von Daten und Befehlsstrukturen**.
+            *   **Ablauf:** Das Programm wird durch eine sequenzielle Abarbeitung von Befehlen (Prozeduren) gesteuert.
+
+        *   **Objektorientierte Sprachen:**
+            *   **Grundprinzip:** **Kapselung** von Daten (Attributen) und zugehörigen Methoden in **Objekten**.
+            *   **Ablauf:** Das Programm wird als Sammlung von Objekten begriffen, die durch **Nachrichtenaustausch** miteinander interagieren.
+    tags: ["VL_Verarbeitung", "Programmierparadigma", "Prozedural", "Objektorientiert", "Slide_27"]
+
+  - model: "Basic"
+    uid: "verarb-comp-int-003c"
+    fields:
+      Front: |
+        Vergleichen Sie **Compiler** und **Interpreter** hinsichtlich ihrer Funktionsweise, Vor- und Nachteilen.
+      Back: |
+        *   **Compiler:**
+            *   **Funktionsweise:** Übersetzt den gesamten Quellcode **in einem Stück** in ein ausführbares Maschinenprogramm.
+            *   **Vorteil:** Schnelle Ausführung des kompilierten Programms, da keine erneute Übersetzung zur Laufzeit nötig ist.
+            *   **Nachteil:** Bei Fehlern muss der gesamte Code neu kompiliert werden.
+
+        *   **Interpreter:**
+            *   **Funktionsweise:** Verarbeitet den Quellcode **Befehl für Befehl** zur Laufzeit.
+            *   **Vorteil:** Gut für interaktive Entwicklung und schnelles Testen, da keine langen Kompilierungsphasen anfallen.
+            *   **Nachteil:** Langsamere Ausführung durch die wiederholte Übersetzung bei jedem Programmlauf.
+    tags: ["VL_Verarbeitung", "Übersetzungsprogramme", "Compiler", "Interpreter", "Slide_29"]
+
+  - model: "Basic"
+    uid: "verarb-tools-004d"
+    fields:
+      Front: |
+        Nennen Sie 4 wesentliche Arten von Werkzeugen, die in der **Implementierungsphase** eingesetzt werden.
+      Back: |
+        1.  **Integrierte Entwicklungsumgebungen (IDE):**
+            *   Bündeln Werkzeuge wie Texteditor, Compiler/Interpreter und Debugger in einer Anwendung (z.B. Visual Studio Code, Eclipse).
+        2.  **Build Tools:**
+            *   Automatisieren den Prozess der Quellcode-Kompilierung und des Deployments (z.B. Maven, Ant).
+        3.  **Versionskontrolle:**
+            *   Verwaltet zentral verschiedene Projektstände und ermöglicht die Zusammenarbeit von Entwicklern (z.B. Subversion (SVN), Git).
+        4.  **Bug Tracking Tools:**
+            *   Erfassen, dokumentieren und verfolgen Programmfehler und Verbesserungsvorschläge (z.B. Jira, Trac).
+    tags: ["VL_Verarbeitung", "Implementierung", "Werkzeuge", "IDE", "Slide_31"]
+
+  - model: "Basic"
+    uid: "ds-kontrollen-005e"
+    fields:
+      Front: |
+        Welche 8 Arten von Kontrollen sichern den Umgang mit IT-Systemen von der Benutzung bis zur Weitergabe?
+      Back: |
+        Die Kontrollen sichern verschiedene Aspekte des Datenzugriffs und -flusses:
+        1.  **Zugangskontrolle** (Physischer Zugang zu DV-Anlagen)
+        2.  **Benutzerkontrolle** (Prüfung der Autorisierung)
+        3.  **Datenträgerkontrolle** (Kontrolle der Benutzung von Datenträgern)
+        4.  **Speicherkontrolle** (Kontrolle der Zugriffsrechte auf Speicher)
+        5.  **Zugriffskontrolle** (Nutzungsberechtigung, abhängig vom Inhalt der Daten)
+        6.  **Eingabekontrolle** (Berechtigung zur Dateneingabe)
+        7.  **Übermittlungskontrolle** (Festhalten, wohin Daten übermittelt wurden)
+        8.  **Transportkontrolle** (Schutz der Daten bei der Übertragung)
+    tags: ["VL_Datenschutz", "Sicherheitskontrollen", "Slide_63"]
+
+  - model: "Basic"
+    uid: "ds-iam-006f"
+    fields:
+      Front: |
+        Definieren Sie die drei Kernprozesse des **IAM (Identity and Access Management)**: Identifizierung, Authentifizierung und Autorisierung.
+      Back: |
+        1.  **Identifizierung:** Die Fähigkeit, einen Benutzer, ein Gerät oder eine Anwendung anhand seiner Attribute **eindeutig zu erkennen** ("Wer bist du?").
+        2.  **Authentifizierung:** Der Prozess zur **Überprüfung der behaupteten Identität** ("Beweise, dass du es bist", z.B. mittels Passwort, Biometrie, MFA).
+        3.  **Autorisierung:** Die **Gewährung des Zugriffs** auf Netzwerkressourcen für eine authentifizierte Identität gemäß den geltenden Richtlinien ("Was darfst du tun?").
+    tags: ["VL_Datenschutz", "IAM", "Identifizierung", "Authentifizierung", "Autorisierung", "Slide_65"]
+
+  - model: "Basic"
+    uid: "abnahme-007g"
+    fields:
+      Front: |
+        Welche 3 Arten von Tests werden in der **Abnahmephase** durchgeführt und was ist das formale Ergebnis?
+      Back: |
+        **Testarten in der Abnahmephase:**
+        1.  **Abnahmetest / Funktionstest:** Liefern die Funktionen die erwünschten Ergebnisse? (Validierung gegen das Pflichtenheft)
+        2.  **Integrationstests:** Funktionieren die integrierten Schnittstellen zu Fremdsystemen korrekt?
+        3.  **Stresstest / Lasttests:** Wie ist die Performance des neuen Systems unter hoher Last?
+
+        **Formales Ergebnis:**
+        *   Ein von Auftraggeber und Auftragnehmer unterzeichnetes **Abnahmeprotokoll**.
+    tags: ["VL_Abschlussphasen", "Abnahmephase", "Testing", "Slide_45"]
+
+  - model: "Basic"
+    uid: "einfuehrung-008h"
+    fields:
+      Front: |
+        Nennen Sie 2 Ansätze zur **Datenmigration** und 3 Arten der **Inbetriebnahme** eines neuen Systems.
+      Back: |
+        **Ansätze zur Datenmigration:**
+        1.  **Vollständige Datenmigration ("Big Bang"):** Alle Altdaten werden zu einem Stichtag komplett in das neue System überführt.
+        2.  **Schrittweise Migration:** Daten werden sukzessive migriert, wobei beide Systeme für eine Übergangszeit koexistieren.
+
+        **Arten der Inbetriebnahme:**
+        1.  **Direkte Umstellung ("Stichtagsumstellung"):** Das Altsystem wird an einem Stichtag abgeschaltet und das Neusystem wird produktiv geschaltet.
+        2.  **Parallellauf:** Alt- und Neusystem laufen für eine gewisse Zeit parallel, um Ergebnisse zu vergleichen.
+        3.  **Versuchsläufe (Pilotbetrieb):** Das Neusystem wird zunächst nur in einem begrenzten Bereich (z.B. einer Abteilung) eingeführt.
+    tags: ["VL_Abschlussphasen", "Einführungsphase", "Datenmigration", "Inbetriebnahme", "Slide_47"]
+
+  - model: "Basic"
+    uid: "wartung-009i"
+    fields:
+      Front: |
+        Nennen Sie die 4 Hauptaufgaben der **Wartungs- & Pflegephase** und deren ungefähre prozentuale Verteilung des Aufwands.
+      Back: |
+        Die Aufgaben und ihre typische Aufwandsverteilung sind:
+        1.  **Erweiterung** (Hinzufügen neuer Funktionalitäten): **~40%**
+        2.  **Stabilisierung und Korrektur** (Fehlerbehebung): **~24%**
+        3.  **Anpassung und Änderung** (Anpassung an geänderte Rahmenbedingungen, z.B. Gesetze): **~22%**
+        4.  **Optimierung und Leistungsverbesserung:** **~14%**
+    tags: ["VL_Abschlussphasen", "Wartungsphase", "Aufgaben", "Slide_54-55"]
+
+  - model: "Basic"
+    uid: "reeng-010j"
+    fields:
+      Front: |
+        Vergleichen Sie **Reverse Engineering** und **Restrukturierung** im Kontext der Sanierung von Altsystemen.
+      Back: |
+        *   **Reverse Engineering:**
+            *   **Ziel:** **Verständnis** eines Altsystems erlangen, indem verborgene Strukturen im Quellcode verdeutlicht und abstraktere Beschreibungsformen (z.B. Modelle) abgeleitet werden.
+            *   **Vorgehen:** Eine reine Analyse-Tätigkeit. Der Quellcode wird dabei **nicht verändert**.
+
+        *   **Restrukturierung:**
+            *   **Ziel:** Die **interne Struktur** des Quellcodes verbessern (z.B. "Spaghetti-Code" aufräumen), um die Wartbarkeit zu erhöhen.
+            *   **Vorgehen:** Eine aktive **Änderung des Quellcodes**. Die externe Funktionalität des Systems bleibt dabei **unverändert**.
+    tags: ["VL_Abschlussphasen", "Wartungsphase", "Reengineering", "Sanierung", "Slide_59"]

@@ -1,0 +1,128 @@
+deck: "Management der Informationssysteme::VL05_BPMN_Modellierung"
+cards:
+  - model: "Basic"
+    uid: "bpmn-act-001a"
+    fields:
+      Front: |
+        Unterscheiden Sie die BPMN-Aktivitäten: **Task**, **zugeklappter Unterprozess** und **aufgeklappter Unterprozess**.
+      Back: |
+        *   **Task (Rechteck):**
+            *   Eine **atomare Arbeitseinheit**, die nicht weiter zerlegt wird.
+            *   Repräsentiert die Tätigkeit, die zu verrichten ist.
+
+        *   **Zugeklappter Unterprozess (Rechteck mit `+`):**
+            *   Eine **zerlegbare Aktivität**, deren Details verborgen sind, um die Übersichtlichkeit zu wahren.
+            *   Deutet an, dass ein detaillierteres Diagramm existiert.
+
+        *   **Aufgeklappter Unterprozess (Großes Rechteck mit internem Diagramm):**
+            *   Eine **verfeinerte Aktivität**, die ihr eigenes, internes BPMN-Diagramm enthält und die Details direkt anzeigt.
+    tags: ["VL_BPMN", "Aktivitäten", "Task", "Unterprozess", "Slide_8"]
+
+  - model: "Basic"
+    uid: "bpmn-evt-002b"
+    fields:
+      Front: |
+        Wie unterscheiden sich **Startereignis**, **Zwischenereignis** und **Endereignis** in BPMN 2.0 visuell und in ihrer Funktion?
+      Back: |
+        Sie unterscheiden sich durch ihre Position im Prozess und die Dicke ihres Randes:
+
+        *   **Startereignis (dünner Rand):**
+            *   **Funktion:** Steht immer **am Anfang** eines Prozesses und löst diesen aus.
+            *   **Visuell:** Kreis mit einer einzelnen, dünnen Linie.
+
+        *   **Zwischenereignis (doppelter Rand):**
+            *   **Funktion:** Tritt **innerhalb** eines Prozesses auf (kann den Fluss unterbrechen oder einen parallelen Pfad auslösen).
+            *   **Visuell:** Kreis mit einer doppelten, dünnen Linie.
+
+        *   **Endereignis (dicker Rand):**
+            *   **Funktion:** Steht immer **am Ende** eines Prozesspfades und beendet diesen.
+            *   **Visuell:** Kreis mit einer einzelnen, dicken Linie.
+    tags: ["VL_BPMN", "Ereignisse", "Start-Zwischen-Ende", "Slide_9"]
+
+  - model: "Basic"
+    uid: "bpmn-specevt-003c"
+    fields:
+      Front: |
+        Welche Bedeutung haben die folgenden Symbole innerhalb eines BPMN-Ereignisses: **Uhr, Briefumschlag, Blitz, Dreieck**?
+      Back: |
+        *   **Uhr:** **Zeit / Timer**
+            *   Definiert einen genauen Zeitpunkt oder eine Zeitspanne (z.B. "warte 30 Minuten").
+
+        *   **Briefumschlag:** **Nachricht**
+            *   Repräsentiert den Empfang oder Versand einer Nachricht.
+
+        *   **Blitz (N-Form):** **Fehler**
+            *   Dient dem Auslösen oder Behandeln (Fangen) eines definierten Fehlers.
+
+        *   **Dreieck:** **Signal / Eskalation**
+            *   Ein Signal kann prozessübergreifend gesendet werden; eine Eskalation ist eine Meldung an eine höhere Verantwortungsebene.
+    tags: ["VL_BPMN", "Ereignisse", "Symbole", "Slide_10"]
+
+  - model: "Basic"
+    uid: "bpmn-gate-004d"
+    fields:
+      Front: |
+        Vergleichen Sie die Funktion und das Symbol des **Exklusiven (XOR)**, **Parallelen (AND)** und **Komplexen Gateways** in BPMN.
+      Back: |
+        *   **Exklusives Gateway (X oder leere Raute):**
+            *   **Logik:** „Entweder-oder“
+            *   **Funktion:** Abhängig von Bedingungen wird **genau einer** der ausgehenden Pfade aktiviert.
+
+        *   **Paralleles Gateway (+ in Raute):**
+            *   **Logik:** „Und“
+            *   **Funktion:** **Alle** ausgehenden Pfade werden gleichzeitig (parallel) aktiviert. Bei der Zusammenführung wird gewartet, bis alle eingehenden Pfade abgeschlossen sind.
+
+        *   **Komplexes Gateway (* in Raute):**
+            *   **Logik:** „Bedingung“
+            *   **Funktion:** Eine oder mehrere Kanten werden abhängig von komplexen Bedingungen oder verbalen Beschreibungen aktiviert. Wird selten verwendet.
+    tags: ["VL_BPMN", "Gateways", "XOR-AND-KOMPLEX", "Slide_13"]
+
+  - model: "Basic"
+    uid: "bpmn-conn-005e"
+    fields:
+      Front: |
+        Unterscheiden Sie **Sequenzfluss**, **Nachrichtenfluss** und **ungerichtete Assoziation** in BPMN.
+      Back: |
+        *   **Sequenzfluss (durchgezogene Linie mit Pfeil):**
+            *   Zeigt die **Ausführungsreihenfolge** von Aktivitäten und Ereignissen **innerhalb eines Pools**.
+
+        *   **Nachrichtenfluss (gestrichelte Linie mit Pfeil):**
+            *   Symbolisiert den **Informationsaustausch** (Kommunikation) **zwischen zwei separaten Pools** (z.B. zwischen "Kunde" und "Unternehmen").
+
+        *   **Assoziation (gepunktete Linie):**
+            *   Verknüpft **Artefakte** (wie Textanmerkungen) oder Datenobjekte mit Flussobjekten (z.B. Aktivitäten, Gateways). Sie hat keine Richtung und beeinflusst den Prozessfluss nicht.
+    tags: ["VL_BPMN", "Flüsse", "Assoziation", "Sequenzfluss", "Nachrichtenfluss", "Slide_12"]
+
+  - model: "Basic"
+    uid: "bpmn-roles-006f"
+    fields:
+      Front: |
+        Was ist ein **Pool** und was ist eine **Lane** in BPMN 2.0?
+      Back: |
+        Beide Elemente dienen der Darstellung von Verantwortlichkeiten:
+
+        *   **Pool:**
+            *   Repräsentiert einen **eigenständigen Prozessteilnehmer**, z.B. ein Unternehmen, einen Kunden oder ein externes System.
+            *   Die Kommunikation *zwischen* Pools erfolgt über **Nachrichtenflüsse**. Ein Pool kann als "Black Box" (leer) oder "White Box" (mit internem Prozess) dargestellt werden.
+
+        *   **Lane (Schwimmbahn):**
+            *   Ist eine **Unterteilung innerhalb eines Pools**.
+            *   Stellt eine spezifische Rolle, Abteilung oder Stelle dar (z.B. "Sekretariat", "Lager", "Management").
+            *   Der **Sequenzfluss** kann die Grenzen zwischen Lanes überschreiten.
+    tags: ["VL_BPMN", "Rollen", "Pool", "Lane", "Slide_7", "Slide_16"]
+
+  - model: "Basic"
+    uid: "bpmn-data-007g"
+    fields:
+      Front: |
+        Erklären Sie die BPMN-Elemente: **Datenobjekt**, **Datenspeicher** und **Textanmerkung**.
+      Back: |
+        *   **Datenobjekt (Dokumentensymbol):**
+            *   Repräsentiert **Informationen, die im Prozess fließen**, erstellt oder verwendet werden (z.B. eine "Bestellung" als PDF). Es existiert nur für die Dauer der Prozessinstanz.
+
+        *   **Datenspeicher (Zylindersymbol):**
+            *   Stellt einen **permanenten Speicherort** dar, auf den der Prozess lesend oder schreibend zugreifen kann (z.B. eine "Kundendatenbank"). Er existiert auch außerhalb des Prozesses.
+
+        *   **Textanmerkung (offene eckige Klammer):**
+            *   Ein **Artefakt**, das zur Kommentierung oder weiteren Erläuterung von Modellelementen dient. Es wird über eine **Assoziation** (gepunktete Linie) mit dem entsprechenden Element verbunden.
+    tags: ["VL_BPMN", "Datenobjekte", "Artefakte", "Datenspeicher", "Slide_11"]

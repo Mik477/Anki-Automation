@@ -1,0 +1,148 @@
+deck: "Management der Informationssysteme::VL04_BPM_Istmodellierung"
+cards:
+  - model: "Basic"
+    uid: "bpm-001a-1b2c"
+    fields:
+      Front: |
+        Nennen Sie die 6 Phasen des **Prozessmanagementkreislaufs** in ihrer logischen Abfolge.
+      Back: |
+        1.  **Strategisches Prozessmanagement**
+        2.  **Aufnahme von Prozessen im Istzustand**
+        3.  **Prozessanalyse**
+        4.  **Entwicklung von Prozessen im Sollzustand**
+        5.  **Prozessimplementierung**
+        6.  **Prozesscontrolling**
+
+        *(Siehe Diagramm auf Folie 5)*
+    tags: ["VL_BPM", "Prozessmanagementkreislauf", "Slide_5"]
+
+  - model: "Basic"
+    uid: "bpm-002b-2c3d"
+    fields:
+      Front: |
+        Was ist ein **Prozessmodell** und welche vier zentralen Zwecke erfüllt es?
+      Back: |
+        **Definition:**
+        Eine zweckorientierte, nach einer bestimmten Systematik und Darstellungsform erstellte **Abbildung eines Prozesses**, dessen Struktur die zeitliche und sachlogische Abfolge der Tätigkeiten widerspiegelt.
+
+        **Zwecke:**
+        1.  **Dokumentation** von Geschäftsprozessen
+        2.  **Grundlage für Analyse** von Geschäftsprozessen
+        3.  **Spezifikation** von Schnittstellen
+        4.  **Unterstützung der Kommunikation** über Geschäftsprozesse
+    tags: ["VL_BPM", "Prozessmodell", "Definition", "Slide_6"]
+
+  - model: "Basic"
+    uid: "bpm-003c-3d4e"
+    fields:
+      Front: |
+        In welche drei Hauptkategorien lassen sich **diagrammbasierte Prozessmodellierungsmethoden** einteilen?
+      Back: |
+        1.  **Datenflussorientiert** (z.B. Datenflussdiagramme)
+        2.  **Kontrollflussorientiert** (z.B. BPMN, EPK)
+        3.  **Objektorientiert** (z.B. UML Activity Diagram)
+    tags: ["VL_BPM", "Modellierungsmethoden", "Systematik", "Slide_8"]
+
+  - model: "Basic"
+    uid: "bpm-004d-4e5f"
+    fields:
+      Front: |
+        Beschreiben Sie die 5 Sichten und 3 Beschreibungsebenen des **ARIS-Hauses**.
+      Back: |
+        Das ARIS-Haus (Architektur integrierter Informationssysteme) strukturiert die Beschreibung von Geschäftsprozessen.
+
+        **5 Sichten (Was wird beschrieben?):**
+        *   **Organisation:** Wer führt aus? (Organigramm)
+        *   **Daten:** Welche Informationen werden benötigt? (ERM)
+        *   **Funktionen:** Was wird getan? (Funktionsbaum)
+        *   **Leistungen:** Welcher Output wird erzeugt?
+        *   **Prozesse:** Verbindet die anderen Sichten in einer zeitlich-logischen Abfolge.
+
+        **3 Beschreibungsebenen (Wie detailliert?):**
+        *   **Fachkonzept:** Betriebswirtschaftliche Problemstellung
+        *   **DV-Konzept:** Umsetzung in IT-Systeme
+        *   **Implementierung:** Konkrete technische Realisierung
+
+        *(Siehe Diagramm auf Folie 9)*
+    tags: ["VL_BPM", "ARIS", "Zerlegungssichtweisen", "Slide_9"]
+
+  - model: "Basic"
+    uid: "bpm-005e-5f6g"
+    fields:
+      Front: |
+        Nennen Sie die 6 **Grundsätze ordnungsmäßiger Modellierung (GoM)**.
+      Back: |
+        1.  Grundsatz der **Richtigkeit** (syntaktisch & semantisch korrekt)
+        2.  Grundsatz der **Relevanz** (nur wesentliche Aspekte modellieren)
+        3.  Grundsatz der **Wirtschaftlichkeit** (Aufwand-Nutzen-Verhältnis)
+        4.  Grundsatz der **Klarheit** (verständlich & übersichtlich)
+        5.  Grundsatz der **Vergleichbarkeit** (konsistente Modellierung)
+        6.  Grundsatz des **systematischen Aufbaus** (klare Gliederung)
+    tags: ["VL_BPM", "GoM", "Modellierungsregeln", "Slide_10"]
+
+  - model: "Basic"
+    uid: "bpm-006f-6g7h"
+    fields:
+      Front: |
+        Fassen Sie die wesentlichen **Vor- und Nachteile der Istmodellierung** zusammen.
+      Back: |
+        **Vorteile (+):**
+        *   Schaffung von Transparenz
+        *   Grundlage für Identifikation von Verbesserungspotenzialen
+        *   Voraussetzung für Entwicklung einer Migrationsstrategie
+        *   Aufhänger für Schulungen
+        *   Checkliste für Sollmodellierung
+
+        **Nachteile (-):**
+        *   Kreativitätshemmend (Fokus auf Bestehendem)
+        *   Hoher Zeit- und Kostenaufwand
+    tags: ["VL_BPM", "Istmodellierung", "Vorteile-Nachteile", "Slide_11"]
+
+  - model: "Basic"
+    uid: "bpm-007g-7h8i"
+    fields:
+      Front: |
+        Nennen Sie die **4 Phasen der Istmodellierung** und jeweils 2 zentrale Aktivitäten pro Phase.
+      Back: |
+        1.  **Vorbereitung:**
+            *   Detaillierungsgrad wählen & Modellierungssprache festlegen
+            *   Informationsquellen identifizieren & Fachexperten auswählen
+        2.  **Identifikation & Priorisierung der Problembereiche:**
+            *   Problemdomäne zerlegen
+            *   Prozesse grob aufnehmen & zu modellierende Aspekte priorisieren
+        3.  **Erhebung & Dokumentation der Istmodelle:**
+            *   Prozesserhebungsmethode auswählen (z.B. Interview, Workshop)
+            *   Prozesserhebung durchführen & Istmodelle erstellen
+        4.  **Modellkonsolidierung:**
+            *   Gesamtmodell erstellen
+            *   Modellierung ausgewählter Geschäftsvorfälle
+    tags: ["VL_BPM", "Istmodellierung", "Phasen", "Slide_12-13"]
+
+  - model: "Basic"
+    uid: "bpm-008h-8i9j"
+    fields:
+      Front: |
+        Nennen Sie die drei Haupttypen von **Prozesserhebungsmethoden** (Discovery Methods).
+      Back: |
+        1.  **Evidence-based Discovery:**
+            *   *Beweisbasiert*, Analyse existierender Artefakte.
+            *   Beispiele: Dokumentenanalyse, Beobachtungen, Ereignisprotokolle.
+        2.  **Interview-based Discovery:**
+            *   Befragung von Prozessbeteiligten.
+        3.  **Workshop-based Discovery:**
+            *   Gemeinsame Erarbeitung der Prozesse in einer moderierten Gruppensitzung.
+    tags: ["VL_BPM", "Prozesserhebung", "Methoden", "Slide_14"]
+
+  - model: "Basic"
+    uid: "bpm-009i-9j0k"
+    fields:
+      Front: |
+        Aus welchen Hauptelementen besteht ein **Prozesssteckbrief**?
+      Back: |
+        Ein Prozesssteckbrief dokumentiert die wichtigsten Informationen zu einem Prozess:
+        *   **Kopf:** Prozessname, Prozessverantwortung, Ansprechpartner
+        *   **Ablauf:** Input, zentrale Tätigkeiten, Output
+        *   **Ressourcen:** Prozessbeteiligte, notwendige Dokumente
+        *   **Steuerung:** Prozesskennzahlen
+        *   **Sonstiges:** Anmerkungen, Hinweise, Besonderheiten
+    tags: ["VL_BPM", "Prozesssteckbrief", "Dokumentation", "Slide_15"]
