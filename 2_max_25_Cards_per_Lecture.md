@@ -3,14 +3,35 @@ Phase 2: Content Analysis & **Consolidated** Blueprint Generation. Your task is 
 
 **Provided Materials:**
 You are being given access to two files:
-1.  **Lecture Slides:**
-2.  **Lecture Transcript:**
+1.  **Lecture Slides**
 
 ---
 
-### **Prime Directive: The 20-Card Limit**
+**Prime Directive: The Principle of Surgical Consolidation**
 
-Your absolute primary goal is to design a blueprint that results in **a maximum of 20 Anki cards** for the entire lecture. This is a hard constraint. To achieve this, you must shift your strategy from granular detail to high-level synthesis. Your success on this task will be measured by your ability to create a powerful and comprehensive study set *within this limit*.
+Your absolute primary goal is to design a blueprint that results in **a maximum of 25 Anki cards** for the entire lecture. This is a hard constraint. To achieve this, you might need to shift your strategy from granular detail to high-level synthesis for certain aspects. Your success on this task will be measured by your ability to create a powerful and comprehensive study set *within this limit*.
+
+This does **not** mean making every card simplistic. It means adopting a **surgical approach**. Your goal is to preserve high-detail, high-quality cards for core, examinable knowledge while efficiently grouping or summarizing less critical, supporting information.
+
+To achieve this balance, you must follow this hierarchy:
+
+1.  **Protect the Core (Keep Detailed):** Prioritize detailed, atomic, and high-quality cards for the most important information. This includes:
+    *   **Formal Definitions** of key terms (e.g., "What is a transaction system?").
+    *   **Core Frameworks and Models** (e.g., Porter's Five Forces, Technology Acceptance Model).
+    *   **Fundamental Principles** or theories.
+    *   **Crucial Distinctions** between two or more concepts (e.g., Data vs. Information).
+
+2.  **Consolidate the Support (Group & Summarize):** Apply high-level synthesis and grouping strategies primarily to secondary or illustrative information. This is where you will save space to meet the 25-card limit. This includes:
+    *   **Lists of Examples:** Instead of one card per example, create one card asking for "3 key examples of B2C business models."
+    *   **Enumerations of Features/Characteristics:** Instead of one card per feature, create one card asking "What are the main characteristics of a transformation system?"
+    *   **Redundant Explanations:** If multiple slides explain the same concept with different visuals, create a single card that captures the central idea.
+
+**Your Consolidation Toolkit:**
+
+*   **To group lists:** Use questions like "List the 4 components of..."
+*   **To summarize concepts:** Use questions like "Explain the core idea of the Long-Tail-Strategie."
+*   **To capture comparisons:** Use "Compare and contrast X and Y based on [criteria]."
+*   **To handle case studies/examples:** Use "What is the key takeaway from the [Company] example regarding [Concept]?"
 
 ---
 

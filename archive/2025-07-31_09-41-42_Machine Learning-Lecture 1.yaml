@@ -1,0 +1,88 @@
+deck: "Machine Learning::Lecture 1"
+cards:
+  - model: "Basic"
+    uid: "a4b1-c8d2-e3f7"
+    fields:
+      Front: |
+        What is the core difference between **Logical Reasoning** (traditional programming) and **Machine Learning**?
+      Back: |
+        *   **Logical Reasoning:** Uses explicit, pre-defined rules provided by a human to process data and produce an answer.
+            *   (Data + Rules) -> Answer
+        *   **Machine Learning:** Infers implicit rules (patterns) by learning from a dataset of inputs and their corresponding answers.
+            *   (Data + Answers) -> Rules
+    tags: ["VL1", "Core_Concepts", "Slide_19-21"]
+  - model: "Basic"
+    uid: "f9g8-h7i6-j5k4"
+    fields:
+      Front: |
+        What are the three main types of Machine Learning and what is the key characteristic of each?
+      Back: |
+        1.  **Supervised Learning:** Learns from **labeled data** to make predictions (e.g., classification, regression).
+        2.  **Unsupervised Learning:** Finds hidden patterns and structures in **unlabeled data** (e.g., clustering).
+        3.  **Reinforcement Learning:** An agent learns to take actions in an environment to maximize a cumulative **reward/penalty signal**.
+    tags: ["VL1", "ML_Types", "Slide_24"]
+  - model: "Basic"
+    uid: "l3m2-n1o9-p8q7"
+    fields:
+      Front: |
+        In the context of Machine Learning, what is the goal of the **polynomial curve fitting** problem?
+      Back: |
+        The goal is to find the optimal set of weights **w** for a polynomial model \( y(x, \mathbf{w}) \) that best approximates the true, underlying data-generating process, given only a finite set of noisy data samples.
+    tags: ["VL1", "Curve_Fitting", "Supervised_Learning", "Slide_26-28"]
+  - model: "Basic"
+    uid: "r6s5-t4u3-v2w1"
+    fields:
+      Front: |
+        What is the **Sum-of-Squares Error (SSE)** function used for in machine learning? Provide the formula.
+      Back: |
+        It is used to quantify the "goodness of fit" of a model by measuring the total squared difference between the model's predictions and the actual target values.
+
+        The formula is:
+        \[ E(\mathbf{w}) = \frac{1}{2} \sum_{n=1}^{N} \{y(x_n, \mathbf{w}) - t_n\}^2 \]
+    tags: ["VL1", "Error_Functions", "Risk_Minimization", "Slide_29"]
+  - model: "Basic"
+    uid: "x9y8-z7a6-b5c4"
+    fields:
+      Front: |
+        What is the difference between true **Risk Minimization** and **Empirical Risk Minimization (ERM)**?
+      Back: |
+        *   **True Risk Minimization:** The theoretical goal of finding a model that minimizes the expected loss over the **true, unknown data distribution** \( P(x,t) \). This is not possible in practice as we don't know \( P(x,t) \).
+        *   **Empirical Risk Minimization (ERM):** The practical approach where we minimize the loss (e.g., SSE) calculated over our finite, **observed training dataset**. It's an approximation of true risk minimization.
+    tags: ["VL1", "Risk_Minimization", "ERM", "Core_Theory", "Slide_30-32"]
+  - model: "Basic"
+    uid: "d3e2-f1g9-h8i7"
+    fields:
+      Front: |
+        What is **overfitting** in machine learning?
+      Back: |
+        Overfitting occurs when a model is overly complex and learns the specific noise and random fluctuations in the training data, rather than the underlying generalizable pattern.
+
+        This results in:
+        *   Very low training error
+        *   High error on new, unseen data (test error)
+    tags: ["VL1", "Overfitting", "Generalization", "Slide_36", "Slide_42"]
+  - model: "Basic (and reversed card)"
+    uid: "j6k5-l4m3-n2o1"
+    fields:
+      Front: |
+        What is the ultimate goal of a supervised machine learning model?
+      Back: |
+        **Generalization**: The ability to perform well on new, unseen data (the test set), not just the data it was trained on.
+    tags: ["VL1", "Generalization", "Core_Concepts", "Slide_39"]
+  - model: "Basic"
+    uid: "p9q8-r7s6-t5u4"
+    fields:
+      Front: |
+        How does **model complexity** (e.g., polynomial order M) typically affect training error and test error?
+      Back: |
+        *   **Training Error:** Consistently decreases as model complexity increases.
+        *   **Test Error:** Typically forms a U-shaped curve. It decreases at first (as the model captures the underlying pattern) and then starts to increase again as the model begins to overfit the training data's noise.
+    tags: ["VL1", "Overfitting", "Bias_Variance", "Model_Complexity", "Slide_43"]
+  - model: "Basic"
+    uid: "v3w2-x1y9-z8a7"
+    fields:
+      Front: |
+        How does increasing the **training dataset size (N)** affect overfitting?
+      Back: |
+        Increasing the training dataset size is a powerful way to **reduce overfitting**. A larger dataset provides more constraints, making it harder for a complex model to simply memorize the noise. It forces the model to learn the more general, underlying pattern that is consistent across all data points, thereby improving generalization and reducing variance.
+    tags: ["VL1", "Overfitting", "Generalization", "Dataset_Size", "Slide_44"]
