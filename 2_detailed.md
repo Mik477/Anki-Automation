@@ -4,7 +4,6 @@ Phase 2: Content Analysis & Blueprint Generation. Your task is to analyze the pr
 **Provided Materials:**
 You are being given access to two files:
 1.  **Lecture Slides** 
-2.  **Lecture Transcript** 
 
 Your analysis should primarily focus on the slides, as they represent the core, examinable structure of the lecture. Use the transcript as a supplementary resource to identify crucial explanations, examples, or nuances mentioned by the professor that are not explicitly detailed on the slides.
 

@@ -1,8 +1,8 @@
 **Objective:**
-Phase 2: Content Analysis & **Consolidated** Blueprint Generation. Your task is to analyze the provided lecture materials for **[Insert Course Name] - Lecture [Insert Lecture Number or Topic]** and create a high-yield, efficient "Anki Blueprint."
+Phase 2: Content Analysis & **Consolidated** Blueprint Generation. Your task is to analyze the provided lecture materials for **[Insert Course Name] - Lecture [Insert Lecture Number or Topic]**, the conversation with the student about said material and lessons learned from that and create a high-yield, efficient "Anki Blueprint."
 
 **Provided Materials:**
-You are being given access to two files:
+You are being given access to the following files:
 1.  **Lecture Slides**
 
 ---
@@ -90,4 +90,4 @@ Here is a fictional example for a lecture on "E-Commerce Business Models," adapt
 ---
 
 **Final Instruction:**
-Analyze the provided slides and transcript for **[Insert Lecture Number or Topic again]**. Your primary objective is to create an efficient and powerful Anki Blueprint that **does not exceed 20 total recommended cards**. Prioritize synthesis and consolidation over granularity. I will review the blueprint before you generate the cards.
+Your primary objective is to create an efficient and powerful Anki Blueprint that **does not exceed 25 total recommended cards**. I will review the blueprint before you generate the cards.
