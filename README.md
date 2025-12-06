@@ -16,7 +16,7 @@ Anki Automation is a powerful tool designed to streamline the process of creatin
 ## Download & Installation
 
 ### Windows
-1.  Download the latest installer from the [Releases](https://github.com/Mik477/Anki-Automation/releases) page or the `installers` folder in this repository.
+1.  Download the latest installer from the [Releases](https://github.com/Mik477/Anki-Automation/releases) page or the `Releases` folder in this repository.
 2.  Run `AnkiAutomation-Setup-1.0.0.exe`.
 3.  Follow the installation wizard.
 4.  Once installed, the "Getting Started" guide will open automatically to help you set up the connection to Anki.
