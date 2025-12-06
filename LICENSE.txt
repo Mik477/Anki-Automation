@@ -1,0 +1,215 @@
+ANKI-AUTOMATION SOFTWARE LICENSE
+Attribution-NonCommercial License (CC BY-NC 4.0 Derivative)
+
+Version 1.0 | Effective Date: December 2, 2025
+Copyright (c) 2025 Mik477 (GitHub: https://github.com/Mik477)
+All Rights Reserved.
+
+==================================================
+                LICENSE AGREEMENT
+==================================================
+
+This License Agreement ("Agreement") governs the use, modification, and 
+distribution of the Anki-Automation software and all associated files, 
+documentation, and resources (collectively, the "Software").
+
+By installing, copying, or otherwise using the Software, you ("Licensee") 
+agree to be bound by the terms of this Agreement. If you do not agree to 
+these terms, do not install or use the Software.
+
+--------------------------------------------------------------------------------
+                           ARTICLE 1: DEFINITIONS
+--------------------------------------------------------------------------------
+
+1.1 "Software" refers to the Anki-Automation application, including all 
+    source code, compiled binaries, documentation, configuration files, 
+    templates, stylesheets, and associated materials.
+
+1.2 "Author" refers to the original creator of the Software: Mik477.
+
+1.3 "Derivative Work" means any work that is based upon the Software, 
+    including but not limited to modifications, enhancements, translations, 
+    adaptations, or any other form in which the Software may be recast, 
+    transformed, or adapted.
+
+1.4 "Commercial Use" means any use of the Software intended for or directed 
+    toward commercial advantage or monetary compensation, including but not 
+    limited to:
+    - Selling the Software or Derivative Works
+    - Using the Software in a commercial product or service
+    - Using the Software in a business environment for profit-generating 
+      activities
+    - Licensing the Software to third parties for a fee
+    - Using the Software to provide paid services
+
+1.5 "Non-Commercial Use" means personal, educational, academic, research, 
+    or other use that is not primarily intended for commercial advantage 
+    or monetary compensation.
+
+--------------------------------------------------------------------------------
+                        ARTICLE 2: GRANT OF LICENSE
+--------------------------------------------------------------------------------
+
+Subject to the terms and conditions of this Agreement, the Author hereby 
+grants Licensee a worldwide, royalty-free, non-exclusive license to:
+
+2.1 USE: Install and use the Software for Non-Commercial purposes.
+
+2.2 COPY: Reproduce and distribute copies of the Software for Non-Commercial 
+    purposes.
+
+2.3 MODIFY: Create Derivative Works based upon the Software for Non-Commercial 
+    purposes.
+
+2.4 SHARE: Distribute Derivative Works for Non-Commercial purposes, provided 
+    that such distribution complies with the Attribution Requirements set 
+    forth in Article 3.
+
+--------------------------------------------------------------------------------
+                      ARTICLE 3: ATTRIBUTION REQUIREMENTS
+--------------------------------------------------------------------------------
+
+Any use, reproduction, modification, or distribution of the Software or 
+Derivative Works must include the following:
+
+3.1 CREDIT: Clear and prominent attribution to the original Author (Mik477) 
+    in all copies, Derivative Works, and documentation.
+
+3.2 COPYRIGHT NOTICE: Retention of all copyright notices, license information, 
+    and disclaimers present in the original Software.
+
+3.3 LINK: When distributed electronically, inclusion of a hyperlink to the 
+    original repository: https://github.com/Mik477/Anki-Automation
+
+3.4 MODIFICATION NOTICE: If you have modified the Software, you must include 
+    a prominent notice stating that you have changed the Software, along with 
+    the date of any changes.
+
+3.5 LICENSE INCLUSION: Distribution of the complete text of this License 
+    Agreement with any copies or Derivative Works of the Software.
+
+Example attribution format:
+    "This software is based on Anki-Automation by Mik477
+     (https://github.com/Mik477/Anki-Automation), licensed under the
+     Anki-Automation Attribution-NonCommercial License."
+
+--------------------------------------------------------------------------------
+                     ARTICLE 4: COMMERCIAL USE RESTRICTION
+--------------------------------------------------------------------------------
+
+4.1 PROHIBITION: Commercial Use of the Software or any Derivative Works is 
+    strictly prohibited without prior written permission from the Author.
+
+4.2 COMMERCIAL LICENSE: Parties interested in Commercial Use must contact 
+    the Author to negotiate a separate commercial license agreement.
+
+4.3 VIOLATIONS: Any Commercial Use without authorization constitutes a 
+    material breach of this Agreement and may result in legal action.
+
+--------------------------------------------------------------------------------
+                   ARTICLE 5: INTELLECTUAL PROPERTY RIGHTS
+--------------------------------------------------------------------------------
+
+5.1 OWNERSHIP: The Author retains all intellectual property rights, title, 
+    and interest in and to the Software, including all modifications and 
+    Derivative Works created by the Author.
+
+5.2 NO TRADEMARK LICENSE: This Agreement does not grant permission to use 
+    the trade names, trademarks, service marks, or product names of the 
+    Author, except as required for reasonable and customary use in 
+    describing the origin of the Software.
+
+5.3 CONTRIBUTIONS: If Licensee contributes modifications or improvements 
+    to the Software, Licensee grants the Author a perpetual, worldwide, 
+    non-exclusive, royalty-free license to use, reproduce, modify, and 
+    distribute such contributions.
+
+--------------------------------------------------------------------------------
+                  ARTICLE 6: DISCLAIMER OF WARRANTIES
+--------------------------------------------------------------------------------
+
+6.1 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+6.2 THE AUTHOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, 
+    UNINTERRUPTED, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+
+6.3 THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS 
+    WITH THE LICENSEE. SHOULD THE SOFTWARE PROVE DEFECTIVE, LICENSEE ASSUMES 
+    THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 7: LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+7.1 IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, 
+    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS 
+    OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR 
+    TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE 
+    USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+7.2 THE LIMITATIONS SET FORTH IN THIS ARTICLE SHALL APPLY REGARDLESS OF 
+    WHETHER THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES 
+    AND NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED 
+    REMEDY PROVIDED HEREIN.
+
+--------------------------------------------------------------------------------
+                           ARTICLE 8: TERMINATION
+--------------------------------------------------------------------------------
+
+8.1 AUTOMATIC TERMINATION: This license automatically terminates if Licensee 
+    fails to comply with any term of this Agreement.
+
+8.2 EFFECT OF TERMINATION: Upon termination, Licensee must cease all use of 
+    the Software and destroy all copies in Licensee's possession or control.
+
+8.3 SURVIVAL: Articles 5, 6, 7, and 9 shall survive any termination of this 
+    Agreement.
+
+8.4 REINSTATEMENT: If Licensee cures any violation within 30 days of becoming 
+    aware of it, the license is automatically reinstated.
+
+--------------------------------------------------------------------------------
+                         ARTICLE 9: GENERAL PROVISIONS
+--------------------------------------------------------------------------------
+
+9.1 ENTIRE AGREEMENT: This Agreement constitutes the entire agreement between 
+    the parties concerning the subject matter hereof.
+
+9.2 SEVERABILITY: If any provision of this Agreement is held to be 
+    unenforceable, such provision shall be reformed only to the extent 
+    necessary to make it enforceable, and the remaining provisions shall 
+    remain in full force and effect.
+
+9.3 WAIVER: The failure of the Author to enforce any right or provision of 
+    this Agreement shall not constitute a waiver of such right or provision.
+
+9.4 AMENDMENTS: The Author reserves the right to modify this Agreement at 
+    any time. Continued use of the Software after such modifications 
+    constitutes acceptance of the modified terms.
+
+9.5 GOVERNING LAW: This Agreement shall be governed by and construed in 
+    accordance with applicable international copyright law and treaties.
+
+--------------------------------------------------------------------------------
+                              ARTICLE 10: CONTACT
+--------------------------------------------------------------------------------
+
+For inquiries regarding commercial licensing, permissions, or other matters 
+related to this Agreement, please contact:
+
+    GitHub: https://github.com/Mik477
+    Repository: https://github.com/Mik477/Anki-Automation
+
+================================================
+
+BY INSTALLING OR USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ 
+THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND 
+CONDITIONS.
+
+================================================
+            END OF LICENSE AGREEMENT
+================================================
